@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo_3(o).png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -27,13 +27,17 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+
+  buildModules: ['@nuxtjs/google-fonts'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+  googleFonts: {
+    Poppins: { wght: [400, 700], bold: [400, 700] },
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
