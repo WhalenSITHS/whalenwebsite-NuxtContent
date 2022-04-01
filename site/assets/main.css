@@ -2,19 +2,21 @@
   /* Define Colors as colors */
   --primary: #24201e;
   --secondary: #ca6e32;
-  --tertiary: E3E5D7;
+  --tertiary: #e3e5d7;
   --white: #fff;
+  --dark-text: #24201e;
   /* Define Colors intentions */
   --background-primary: var(--primary);
+
   /* Styles */
 
   /* Type */
 
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
+  --h1: 5.653rem;
+  --h2: 3.998rem;
+  --h3: 2.827rem;
+  --h4: 1.999rem;
+  --h5: 1.414rem;
   --smallText: 0.8rem;
 
   /* Elevation */
@@ -84,4 +86,34 @@ h5 {
 body {
   background-color: var(--background-primary);
   color: var(--white);
+}
+.btn {
+  font-size: var(--h4);
+  width: 22rem;
+  height: 5rem;
+  color: var(--white);
+  border: 2px solid transparent;
+  padding: 0.5rem 2.4rem;
+  text-decoration: none;
+  transition: all 0.4s;
+  background-color: transparent;
+  border-radius: 3rem;
+  transition: all 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-btn:hover {
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: var(--level-2-white);
+}
+
+.header-btn-link,
+.header-btn-link:visited,
+.header-btn-link:link {
+  text-decoration: none;
+  color: inherit;
 }

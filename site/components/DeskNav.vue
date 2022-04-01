@@ -28,7 +28,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
 }
 .nav-item-desk {
   font-size: var(--h3);
@@ -58,7 +58,7 @@ export default {
   text-decoration: none;
   transition: all 0.4s;
   margin: 1rem 0;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   font-size: var(--h3);
   color: var(--secondary);
   font-family: 'Bungee', cursive;
