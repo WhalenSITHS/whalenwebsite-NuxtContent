@@ -1,8 +1,11 @@
 :root {
   /* Define Colors as colors */
-
+  --primary: #24201e;
+  --secondary: #ca6e32;
+  --tertiary: E3E5D7;
+  --white: #fff;
   /* Define Colors intentions */
-
+  --background-primary: var(--primary);
   /* Styles */
 
   /* Type */
@@ -76,4 +79,9 @@ h4 {
 
 h5 {
   font-size: var(--h5);
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--white);
 }
