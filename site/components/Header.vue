@@ -75,4 +75,15 @@ header {
 .header-btn-secondary {
   background-color: var(--secondary);
 }
+
+.header-btn-primary::after {
+  background-color: var(--tertiary);
+
+  color: #fff;
+}
+.header-btn-secondary::after {
+  background-color: var(--secondary);
+
+  color: #fff;
+}
 </style>
