@@ -48,6 +48,7 @@ export default {}
 .comm {
   display: flex;
   flex-direction: column;
+  margin: 3rem auto;
   height: 90vh;
   justify-content: space-between;
   align-items: center;
@@ -88,5 +89,26 @@ export default {}
 }
 .comm-span {
   color: var(--secondary);
+}
+@media screen and (max-width: 900px) {
+  .comm-wrapper {
+    flex-direction: column;
+    width: 90vw;
+    margin: 3rem auto;
+  }
+  .comm-header-wrapper {
+    width: 100%;
+  }
+  .comm-header {
+    margin: 3rem auto;
+  }
+  .comm-desc {
+    font-size: var(--h3);
+    margin: 3rem auto;
+  }
+  .comm-text {
+    margin: 3rem auto 6rem auto;
+    width: 100%;
+  }
 }
 </style>

@@ -95,4 +95,20 @@ header {
     width: 90vw;
   }
 }
+@media screen and (max-width: 900px) {
+  header {
+    margin: 0 auto;
+    height: 90vh;
+    justify-content: flex-start;
+  }
+  .header-wrapper {
+    height: 100%;
+  }
+  .header-image {
+    display: none;
+  }
+  .text-container {
+    align-self: center;
+  }
+}
 </style>

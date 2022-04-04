@@ -23,6 +23,11 @@ export default {
   width: 90vw;
   margin: 1rem auto;
 }
+@media screen and (max-width: 800px) {
+  .desk-nav {
+    display: none;
+  }
+}
 .link-wrapper {
   display: flex;
   flex-direction: row;

@@ -41,9 +41,20 @@
 
 html {
   box-sizing: border-box;
+  scrollbar-width: thick;
+  scrollbar-color: var(--secondary) var(--primary);
   font-size: 62.5%;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+}
+htmL::-webkit-scrollbar {
+  width: 15px;
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--primary);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
 }
 @media screen and (max-width: 1300px) {
   html {
@@ -55,9 +66,15 @@ html {
     font-size: 55%;
   }
 }
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 52%;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 *,
 *::before,
 *::after {

@@ -85,4 +85,21 @@ export default {}
   width: 100%;
   object-fit: cover;
 }
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+  }
+  .about-text-wrapper,
+  .about-image-wrapper {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  .about-header,
+  .about-secondary,
+  .about-tertiary {
+    text-align: center;
+  }
+}
 </style>

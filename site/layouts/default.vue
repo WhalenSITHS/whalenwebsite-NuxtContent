@@ -1,6 +1,7 @@
 <template>
   <div>
-    <DeskNav />
+    <!--  <DeskNav /> -->
+    <MobileNav />
     <Nuxt />
   </div>
 </template>
