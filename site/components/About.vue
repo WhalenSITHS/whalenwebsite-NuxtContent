@@ -18,9 +18,13 @@
       />
       <h3 class="about-img-owner">Pokemon Battle Simulator</h3>
       <h4 class="about-img-owner">William Anderson 2020</h4>
-      <nuxt-link to="/" class="btn header-btn-secondary">
-        See Our Work
-      </nuxt-link>
+      <a
+        href="https://pkmnsim.netlify.app/"
+        target="_blank"
+        class="btn header-btn-secondary"
+      >
+        Check It Out
+      </a>
     </div>
   </section>
 </template>
@@ -59,8 +63,25 @@ export default {}
 .about-secondary,
 .about-tertiary {
   text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+.about-header {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: var(--h1);
+  margin-top: 0;
+}
+.about-secondary {
+  font-size: var(--h2);
+}
+.about-tertiary {
+  font-size: var(--h3);
+  color: var(--tertiary);
 }
 .about-img {
+  margin-top: 0;
   width: 100%;
   object-fit: cover;
 }
