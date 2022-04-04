@@ -17,6 +17,7 @@
   --h3: 2.827rem;
   --h4: 1.999rem;
   --h5: 1.414rem;
+
   --smallText: 0.8rem;
 
   /* Elevation */
@@ -44,12 +45,16 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
-    font-size: 58%;
+    font-size: 59%;
   }
 }
-
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
 }

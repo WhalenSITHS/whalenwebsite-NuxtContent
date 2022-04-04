@@ -2,6 +2,7 @@
   <div>
     <Header />
     <About />
+    <Community />
   </div>
 </template>
 

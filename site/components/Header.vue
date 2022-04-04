@@ -10,7 +10,7 @@
         >
       </div>
       <img
-        src="https://res.cloudinary.com/dbopxlpuy/image/upload/c_scale,f_auto,q_auto,w_1200/v1611365531/Bao/test_c6zrj6.png"
+        src="https://res.cloudinary.com/dbopxlpuy/image/upload/f_auto,q_auto/v1648839018/iamge_l8hueo.png"
         alt="Image of 3 iPhones with student work"
         class="header-image"
       />
@@ -25,27 +25,28 @@ export default {}
 <style>
 header {
   height: 90vh;
-  margin: 1rem auto;
+  margin: 3.5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .header-wrapper {
-  margin: 1rem auto;
+  margin: 0 auto;
   width: 80vw;
+  height: 60vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
+
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: flex-start;
-
-  height: 100%;
 }
+
 .header-primary {
   font-size: var(--h1);
   margin: 1rem auto;
@@ -56,8 +57,10 @@ header {
   color: var(--secondary);
 }
 .header-image {
-  width: 45%;
+  width: 25%;
+  height: 100%;
   object-fit: cover;
+  transform: rotate(-15deg);
 }
 .header-btn-primary,
 .header-btn-secondary {
@@ -85,5 +88,11 @@ header {
   background-color: var(--secondary);
 
   color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+  .header-wrapper {
+    width: 90vw;
+  }
 }
 </style>

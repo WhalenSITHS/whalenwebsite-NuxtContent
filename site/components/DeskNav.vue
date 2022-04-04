@@ -49,6 +49,11 @@ export default {
   background-size: 240%;
   transition: all 0.4s;
 }
+@media screen and (max-width: 1300px) {
+  .link-wrapper {
+    width: 50%;
+  }
+}
 .nav-item-desk:hover,
 .nav-item-desk:active {
   background-position: 100%;
