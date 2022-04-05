@@ -55,7 +55,7 @@ export default {}
 }
 .comm-header-wrapper {
   width: 70vw;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@ export default {}
 }
 .comm-header {
   font-size: var(--h1);
-  margin: 2rem auto;
+  margin: 5rem auto;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -104,10 +104,10 @@ export default {}
   }
   .comm-desc {
     font-size: var(--h3);
-    margin: 3rem auto;
+    margin: 5rem auto;
   }
   .comm-text {
-    margin: 3rem auto 6rem auto;
+    margin: 5rem auto 6rem auto;
     width: 100%;
   }
 }

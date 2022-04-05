@@ -20,10 +20,16 @@ export default {
   data() {
     return {
       resources: null,
+      creators: [],
+      development: [],
+      css: [],
+      design: [],
+      js: [],
     }
   },
   async fetch() {
     this.resources = await this.$content('resources').fetch()
+    this.creators =
   },
 }
 </script>

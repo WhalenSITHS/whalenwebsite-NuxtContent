@@ -18,6 +18,7 @@ export default {
     alt: String,
     link: String,
   },
+
   computed: {
     getImage: function () {
       return require(`~/assets/public/${this.image}.png`)
