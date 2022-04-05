@@ -39,9 +39,9 @@ export default {
 
 <style>
 @media screen and (min-width: 800px) {
-  /* .menu {
+  .menu {
     display: none;
-  } */
+  }
 }
 .hamburger {
   height: 6.3rem;
