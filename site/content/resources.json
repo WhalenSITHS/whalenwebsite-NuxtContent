@@ -1,0 +1,85 @@
+{
+    "resources":[
+        {
+            "name":"Pika Screenshots",
+            "link": "https://pika.rishimohan.me/",
+            "thumbnail": "~/assets/pika.png",
+            "alt":"Pika Screenshot Homepage",
+            "description":"Pika allows us to make great screenshots for our portfolios",
+            "tag":"design"
+        },
+        {
+            "name":"Vanta JS",
+            "link": "https://www.vantajs.com/?effect=globe",
+            "thumbnail": "~/assets/vanta.png",
+            "alt":"Vanta Homepage",
+            "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
+            "tag":"design"
+        },
+        {
+            "name":"Glass Morphism Generator",
+            "link": "https://ui.glass/",
+            "thumbnail": "~/assets/glassui.png",
+            "alt":"Glass UI Homepage",
+            "description":"CSS UI Library and Glassmorphism generator",
+            "tag":"css"
+        },
+        {
+            "name":"Pocoloco",
+            "link": "https://pocoloco.io/",
+            "thumbnail": "~/assets/pocoloco.png",
+            "alt":"Pocoloco Homepage",
+            "description":"Generate dynamic backgrounds",
+            "tag":"design"
+        },
+        {
+            "name":"Copy and Paste CSS",
+            "link": "https://copy-paste-css.com/",
+            "thumbnail": "~/assets/copypaste.png",
+            "alt":"Copy Paste Homepage",
+            "description":"Ready made CSS to copy",
+            "tag":"css"
+        },
+        {
+            "name":"Neumorphism.io",
+            "link": "https://neumorphism.io/#e0e0e0",
+            "thumbnail": "~/assets/neumorphism.png",
+            "alt":"neumorphism Homepage",
+            "description":"Generate soft-ui code",
+            "tag":"css"
+        },
+        {
+            "name":"VSCode",
+            "link": "https://code.visualstudio.com/",
+            "thumbnail": "~/assets/vscode.png",
+            "alt":"https://code.visualstudio.com/ Homepage",
+            "description":"Official Code Editor of SITHS",
+            "tag":"development"
+        },
+        {
+            "name":"VSCode",
+            "link": "https://code.visualstudio.com/",
+            "thumbnail": "~/assets/vscode.png",
+            "alt":"VScode download Homepage",
+            "description":"Official Code Editor of SITHS",
+            "tag":"development"
+        },
+        {
+            "name":"Codepen",
+            "link": "https://codepen.io",
+            "thumbnail": "~/assets/codepen.png",
+            "alt":"codepen Homepage",
+            "description":"build, test and discover front end code",
+            "tag":"development"
+        },
+        {
+            "name":"Firebase",
+            "link": "https://firebase.google.com/",
+            "thumbnail": "~/assets/firebase.png",
+            "alt":"Firebase Homepage",
+            "description":"Backend as a service",
+            "tag":"js"
+        }
+
+    ]
+}
