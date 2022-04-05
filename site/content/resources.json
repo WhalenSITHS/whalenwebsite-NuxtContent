@@ -3,7 +3,7 @@
         {
             "name":"Pika Screenshots",
             "link": "https://pika.rishimohan.me/",
-            "thumbnail": "~/assets/pika.png",
+            "thumbnail": "pika",
             "alt":"Pika Screenshot Homepage",
             "description":"Pika allows us to make great screenshots for our portfolios",
             "tag":"design"
@@ -11,7 +11,7 @@
         {
             "name":"Vanta JS",
             "link": "https://www.vantajs.com/?effect=globe",
-            "thumbnail": "~/assets/vanta.png",
+            "thumbnail": "vanta",
             "alt":"Vanta Homepage",
             "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
             "tag":"design"
@@ -19,7 +19,7 @@
         {
             "name":"Glass Morphism Generator",
             "link": "https://ui.glass/",
-            "thumbnail": "~/assets/glassui.png",
+            "thumbnail": "glassui",
             "alt":"Glass UI Homepage",
             "description":"CSS UI Library and Glassmorphism generator",
             "tag":"css"
@@ -27,7 +27,7 @@
         {
             "name":"Pocoloco",
             "link": "https://pocoloco.io/",
-            "thumbnail": "~/assets/pocoloco.png",
+            "thumbnail": "pocoloco",
             "alt":"Pocoloco Homepage",
             "description":"Generate dynamic backgrounds",
             "tag":"design"
@@ -35,7 +35,7 @@
         {
             "name":"Copy and Paste CSS",
             "link": "https://copy-paste-css.com/",
-            "thumbnail": "~/assets/copypaste.png",
+            "thumbnail": "copypaste",
             "alt":"Copy Paste Homepage",
             "description":"Ready made CSS to copy",
             "tag":"css"
@@ -43,23 +43,16 @@
         {
             "name":"Neumorphism.io",
             "link": "https://neumorphism.io/#e0e0e0",
-            "thumbnail": "~/assets/neumorphism.png",
+            "thumbnail": "neumorphism",
             "alt":"neumorphism Homepage",
             "description":"Generate soft-ui code",
             "tag":"css"
         },
+       
         {
             "name":"VSCode",
             "link": "https://code.visualstudio.com/",
-            "thumbnail": "~/assets/vscode.png",
-            "alt":"https://code.visualstudio.com/ Homepage",
-            "description":"Official Code Editor of SITHS",
-            "tag":"development"
-        },
-        {
-            "name":"VSCode",
-            "link": "https://code.visualstudio.com/",
-            "thumbnail": "~/assets/vscode.png",
+            "thumbnail": "VScode",
             "alt":"VScode download Homepage",
             "description":"Official Code Editor of SITHS",
             "tag":"development"
@@ -67,7 +60,7 @@
         {
             "name":"Codepen",
             "link": "https://codepen.io",
-            "thumbnail": "~/assets/codepen.png",
+            "thumbnail": "codepen",
             "alt":"codepen Homepage",
             "description":"build, test and discover front end code",
             "tag":"development"
@@ -75,11 +68,154 @@
         {
             "name":"Firebase",
             "link": "https://firebase.google.com/",
-            "thumbnail": "~/assets/firebase.png",
+            "thumbnail": "firebase",
             "alt":"Firebase Homepage",
             "description":"Backend as a service",
             "tag":"js"
+        },
+        {
+            "name":"Stackoverflow",
+            "link": "https://stackoverflow.com/",
+            "thumbnail": "stack",
+            "alt":"Stackoverflow Homepage",
+            "description":"resource for asking questions",
+            "tag":"js"
+        },
+        {
+            "name":"VueJS Docs",
+            "link": "https://vuejs.org/",
+            "thumbnail": "vuejs",
+            "alt":"Vue Homepage",
+            "description":"Vue has stellar docs for learning",
+            "tag":"js"
+        },
+        {
+            "name":"Cubic Bezier",
+            "link": "https://cubic-bezier.com/#.17,.67,.83,.67",
+            "thumbnail": "cubic",
+            "alt":"Cubic Bezier Homepage",
+            "description":"Cubic Bezier can help you nail down animation timings.",
+            "tag":"css"
+        },
+        {
+            "name":"Type Scale",
+            "link": "https://type-scale.com/",
+            "thumbnail": "typescale",
+            "alt":"typescale Homepage",
+            "description":"Visual Calculator for Typography",
+            "tag":"design"
+        },
+        {
+            "name":"Animate on Scroll",
+            "link": "https://michalsnik.github.io/aos/",
+            "thumbnail": "aos",
+            "alt":"AOS Homepage",
+            "description":"AOS is a simple to use, lightweight library for animating content based on scroll position",
+            "tag":"js"
+        },
+        {
+            "name":"Undraw Illustrations",
+            "link": "https://undraw.co/illustrations",
+            "thumbnail": "undraw",
+            "alt":"Undraw Homepage",
+            "description":"Undraw provides tons of quality, free SVG's that you can customize the color of before downloading",
+            "tag":"design"
+        },
+        {
+            "name":"Emmet Cheat Sheet",
+            "link": "https://docs.emmet.io/cheat-sheet/",
+            "thumbnail": "emmett",
+            "alt":"Emmet Homepage",
+            "description":"Check out this useful Emmet Cheat Sheet for VSCode",
+            "tag":"development"
+        },
+        {
+            "name":"My VSCode Settings",
+            "link": "https://github.com/WhalenSITHS/Markdown-vscode/blob/master/vscode.md",
+            "thumbnail": "myvscode",
+            "alt":"image of my settings",
+            "description":"My settings, recommend you copy them for class",
+            "tag":"development"
+        },
+        {
+            "name":"Clippy",
+            "link": "https://bennettfeely.com/clippy/",
+            "thumbnail": "clippy",
+            "alt":"bennetfeely homepage",
+            "description":"Easily create CSS clip paths with a handy GUI.",
+            "tag":"css"
+        },
+        {
+            "name":"Unsplash",
+            "link": "https://unsplash.com/",
+            "thumbnail": "unsplash",
+            "alt":"Unsplash homepage",
+            "description":"Great Resource for Stock Images",
+            "tag":"design"
+        },
+        {
+            "name":"Pixabay",
+            "link": "https://pixabay.com/",
+            "thumbnail": "pixabay",
+            "alt":"pixabay homepage",
+            "description":"Stock images",
+            "tag":"design"
+        },
+        {
+            "name":"Pexels",
+            "link": "https://www.pexels.com/",
+            "thumbnail": "Pexels",
+            "alt":"Pexels homepage",
+            "description":"Pexels offers free stock videos and images",
+            "tag":"design"
+        },
+        {
+            "name":"Flaticon",
+            "link": "https://www.flaticon.com/",
+            "thumbnail": "Flaticon",
+            "alt":"flaticon homepage",
+            "description":"Free icons and SVG's",
+            "tag":"design"
+        },
+        {
+            "name":"Design Course",
+            "link": "https://www.youtube.com/c/designcourse",
+            "thumbnail": "designcourse",
+            "alt":"designcourse channel youtube",
+            "description":"This YouTube channel as all the amazing design and animation tutorials you could want from a YouTube channel. ",
+            "tag":"creator"
+        },
+        {
+            "name":"DevEd",
+            "link": "https://www.youtube.com/c/DevEd/videos",
+            "thumbnail": "deved",
+            "alt":"Dev Ed Youtube Channel Screenshot",
+            "description":"Lots of react and vanilla design tutorials",
+            "tag":"creator"
+        },
+        {
+            "name":"Traversy Media",
+            "link": "https://www.youtube.com/c/TraversyMedia",
+            "thumbnail": "traversy",
+            "alt":"Traversy Media channel",
+            "description":"Tutorials on all matter of web dev",
+            "tag":"creator"
+        },
+        {
+            "name":"Level Up Tuts",
+            "link": "https://www.youtube.com/c/LevelUpTuts",
+            "thumbnail": "levelup",
+            "alt":"Level Up Tuts channel screeshot",
+            "description":"Great SvelteJS content",
+            "tag":"creator"
+        },
+        {
+            "name":"Net Ninja",
+            "link": "https://www.youtube.com/c/TheNetNinja",
+            "thumbnail": "ninja",
+            "alt":"Net Ninja channel screeshot",
+            "description":"Great content for all frameworks and backend" ,
+            "tag":"creator"
         }
-
     ]
 }
