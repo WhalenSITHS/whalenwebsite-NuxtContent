@@ -1,13 +1,11 @@
 <template>
-  <div class="resource-card" :style="getBorder">
+  <div class="resource-card">
     <img :src="getImage" :alt="altText" class="resource-img" />
     <h2 class="resource-title">{{ title }}</h2>
     <p class="resource-text">
       {{ text }}
     </p>
-    <a class="resource-btn" :href="link" target="_blank" :style="getColor"
-      >Visit</a
-    >
+    <a class="resource-btn" :href="link" target="_blank">Visit</a>
   </div>
 </template>
 
@@ -108,12 +106,12 @@ export default {
   font-size: var(--h4);
   width: 15rem;
   height: 3.5rem;
-  color: black;
+  color: white;
   border: 2px solid transparent;
   padding: 0.3rem 2rem;
   text-decoration: none;
   transition: all 0.4s;
-
+  background-color: var(--secondary);
   border-radius: 3rem;
   transition: all 0.3s;
   text-align: center;

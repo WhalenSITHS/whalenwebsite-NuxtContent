@@ -1,5 +1,5 @@
 <template>
-  <a class="resource-pill" :style="getColor">
+  <a class="resource-pill">
     {{ title }}
   </a>
 </template>
@@ -35,8 +35,8 @@ export default {
   font-size: 1.6rem;
   width: 19rem;
   height: 5rem;
-  color: #000;
-
+  color: black;
+  background-color: white;
   border: 2px solid transparent;
   padding: 0.5rem 2.4rem;
   text-decoration: none;
