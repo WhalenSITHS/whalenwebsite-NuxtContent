@@ -26,9 +26,6 @@ export default {
     getColor() {
       return 'background-color: ' + this.colors[`${this.color}`]
     },
-    getResource() {
-      return `#${this.title}`
-    },
   },
 }
 </script>

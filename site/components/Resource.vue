@@ -1,5 +1,5 @@
 <template>
-  <div class="resource-card">
+  <div class="resource-card" :style="getBorder">
     <img :src="getImage" :alt="altText" class="resource-img" />
     <h2 class="resource-title">{{ title }}</h2>
     <p class="resource-text">
@@ -17,8 +17,20 @@ export default {
     image: String,
     alt: String,
     link: String,
+    tag: String,
   },
-
+  data() {
+    return {
+      colors: {
+        All: '#A5F3FC',
+        js: '#FEF08A',
+        css: '#bfdbfe',
+        design: '#F87171',
+        creator: '#BBF7D0',
+        development: '#F5D0FE',
+      },
+    }
+  },
   computed: {
     getImage: function () {
       return require(`~/assets/public/${this.image}.png`)
@@ -28,6 +40,9 @@ export default {
     },
     getLink: function () {
       return this.link
+    },
+    getBorder() {
+      return 'border-top: 20px solid ' + this.colors[`${this.tag}`]
     },
   },
 }
@@ -72,6 +87,7 @@ export default {
   width: 100%;
   height: 50%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .resource-title {
   font-size: var(--h4);

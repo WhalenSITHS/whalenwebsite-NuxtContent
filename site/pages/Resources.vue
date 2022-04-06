@@ -1,70 +1,23 @@
 <template>
   <section class="resources">
     <ul class="sort">
+      <ResourcePill color="All" title="All" />
       <ResourcePill color="JS" title="JavaScript" />
       <ResourcePill color="CSS" title="CSS" />
       <ResourcePill color="Design" title="Design" />
       <ResourcePill color="Content" title="Content Makers" />
+      <ResourcePill color="Dev" title="Development" />
     </ul>
-    <h2 class="section-title">Development</h2>
+
     <div class="resource-section">
       <Resource
-        v-for="resource in DevResources"
+        v-for="resource in resources.resources"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
         :link="resource.link"
         :alt="resource.alt"
-        :text="resource.description"
-      ></Resource>
-    </div>
-    <h2 class="section-title" id="Design">Design</h2>
-    <div class="resource-section">
-      <Resource
-        v-for="resource in DesignResources"
-        :key="resource.name"
-        :title="resource.name"
-        :image="resource.thumbnail"
-        :link="resource.link"
-        :alt="resource.alt"
-        :text="resource.description"
-      ></Resource>
-    </div>
-    <h2 class="section-title" id="JavaScript">JavaScript</h2>
-    <div class="resource-section">
-      <Resource
-        v-for="resource in JSResources"
-        :key="resource.name"
-        :title="resource.name"
-        :image="resource.thumbnail"
-        :link="resource.link"
-        :alt="resource.alt"
-        :text="resource.description"
-      ></Resource>
-    </div>
-    <h2 class="section-title" id="CSS">CSS</h2>
-    <div class="resource-section">
-      <Resource
-        v-for="resource in CSSResources"
-        :key="resource.name"
-        :title="resource.name"
-        :image="resource.thumbnail"
-        :link="resource.link"
-        :alt="resource.alt"
-        :text="resource.description"
-      ></Resource>
-    </div>
-    <h2 class="section-title" id="Content Makers">
-      Content Creators and Libraries
-    </h2>
-    <div class="resource-section">
-      <Resource
-        v-for="resource in CreatorResources"
-        :key="resource.name"
-        :title="resource.name"
-        :image="resource.thumbnail"
-        :link="resource.link"
-        :alt="resource.alt"
+        :tag="resource.tag"
         :text="resource.description"
       ></Resource>
     </div>
@@ -100,7 +53,9 @@ export default {
     )
   },
 
-  computed: {},
+  computed: {
+    sortResources() {},
+  },
 }
 </script>
 
