@@ -1,14 +1,15 @@
 {
     "resources":[
-        
         {
-            "name":"Vanta JS",
-            "link": "https://www.vantajs.com/?effect=globe",
-            "thumbnail": "vanta",
-            "alt":"Vanta Homepage",
-            "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
-            "tag":["design", "css"]
+            "name":"My VSCode Settings",
+            "link": "https://github.com/WhalenSITHS/Markdown-vscode/blob/master/vscode.md",
+            "thumbnail": "myvscode",
+            "alt":"image of my settings",
+            "description":"My settings, recommend you copy them for class",
+            "tag":["development"]
         },
+        
+       
         {
             "name":"Glass Morphism Generator",
             "link": "https://ui.glass/",
@@ -49,6 +50,14 @@
             "alt":"VScode download Homepage",
             "description":"Official Code Editor of SITHS",
             "tag":["development"]
+        },
+        {
+            "name":"Vanta JS",
+            "link": "https://www.vantajs.com/?effect=globe",
+            "thumbnail": "vanta",
+            "alt":"Vanta Homepage",
+            "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
+            "tag":["design", "css"]
         },
         {
             "name":"Codepen",
@@ -122,14 +131,7 @@
             "description":"Check out this useful Emmet Cheat Sheet for VSCode",
             "tag":["development"]
         },
-        {
-            "name":"My VSCode Settings",
-            "link": "https://github.com/WhalenSITHS/Markdown-vscode/blob/master/vscode.md",
-            "thumbnail": "myvscode",
-            "alt":"image of my settings",
-            "description":"My settings, recommend you copy them for class",
-            "tag":["development"]
-        },
+        
         {
             "name":"Clippy",
             "link": "https://bennettfeely.com/clippy/",
