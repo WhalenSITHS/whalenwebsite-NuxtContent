@@ -33,12 +33,10 @@ export default {
 <style scoped>
 .resource-pill {
   font-size: 2.5rem;
-
+  cursor: pointer;
   height: 5rem;
-
   color: white;
   border: 2px solid transparent;
-  padding: 0.5rem 2.4rem;
   text-decoration: none;
   transition: all 0.4s;
   transition: all 0.3s;

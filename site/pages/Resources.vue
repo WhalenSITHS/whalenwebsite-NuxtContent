@@ -1,12 +1,37 @@
 <template>
   <section class="resources">
+    <h2 class="filter">Filter By</h2>
     <ul class="sort">
-      <ResourcePill color="All" title="All" />
-      <ResourcePill color="JS" title="JavaScript" @button-click="showJS()" />
-      <ResourcePill color="CSS" title="CSS" />
-      <ResourcePill color="Design" title="Design" />
-      <ResourcePill color="Content" title="Content Creators" />
-      <ResourcePill color="Dev" title="Development" />
+      <ResourcePill
+        color="All"
+        title="All"
+        @button-click="showJS(resources.resources)"
+      />
+      <ResourcePill
+        color="JS"
+        title="JavaScript"
+        @button-click="showJS(JSResources)"
+      />
+      <ResourcePill
+        color="CSS"
+        title="CSS"
+        @button-click="showJS(CSSResources)"
+      />
+      <ResourcePill
+        color="Design"
+        title="Design"
+        @button-click="showJS(DesignResources)"
+      />
+      <ResourcePill
+        color="Content"
+        title="Content Creators"
+        @button-click="showJS(CreatorResources)"
+      />
+      <ResourcePill
+        color="Dev"
+        title="Development"
+        @button-click="showJS(DevResources)"
+      />
     </ul>
 
     <div class="resource-section">
@@ -35,12 +60,6 @@ export default {
       CSSResources: [],
       DesignResources: [],
       JSResources: [],
-      showAll: true,
-      showDev: false,
-      showDesign: false,
-      showJs: false,
-      showCss: false,
-      showCreator: false,
     }
   },
   async fetch() {
@@ -58,19 +77,23 @@ export default {
     this.CreatorResources = this.resources.resources.filter((el) =>
       el.tag.includes('creator')
     )
-    this.DesignResources = this.resources.resources.filter(
-      (el) => el.tag[0] === 'design'
+    this.DesignResources = this.resources.resources.filter((el) =>
+      el.tag.includes('design')
     )
   },
   methods: {
-    showJS: function () {
-      this.All = this.JSResources
+    showJS: function (sortBy) {
+      this.All = sortBy
     },
   },
 }
 </script>
 
 <style>
+.filter {
+  color: var(--secondary);
+  font-weight: 700;
+}
 .resources {
   display: flex;
   flex-direction: column;
@@ -81,9 +104,10 @@ export default {
 .sort {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 80vw;
+  justify-content: space-around;
+  width: 60vw;
   margin: 3rem auto;
+  border-bottom: 3px solid #e3e5d7;
 }
 .section-title {
   font-size: var(--h1);
