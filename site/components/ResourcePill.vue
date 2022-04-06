@@ -1,5 +1,5 @@
 <template>
-  <a class="resource-pill">
+  <a class="resource-pill" @click="$emit('button-click')">
     {{ title }}
   </a>
 </template>
@@ -32,17 +32,15 @@ export default {
 
 <style scoped>
 .resource-pill {
-  font-size: 1.6rem;
-  width: 19rem;
+  font-size: 2.5rem;
+
   height: 5rem;
-  color: black;
-  background-color: white;
+
+  color: white;
   border: 2px solid transparent;
   padding: 0.5rem 2.4rem;
   text-decoration: none;
   transition: all 0.4s;
-
-  border-radius: 3rem;
   transition: all 0.3s;
   text-align: center;
   display: flex;
