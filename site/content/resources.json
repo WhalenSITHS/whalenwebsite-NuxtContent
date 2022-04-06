@@ -1,13 +1,6 @@
 {
     "resources":[
-        {
-            "name":"Pika Screenshots",
-            "link": "https://pika.rishimohan.me/",
-            "thumbnail": "pika",
-            "alt":"Pika Screenshot Homepage",
-            "description":"Pika allows us to make great screenshots for our portfolios",
-            "tag":["design"]
-        },
+        
         {
             "name":"Vanta JS",
             "link": "https://www.vantajs.com/?effect=globe",
@@ -216,6 +209,14 @@
             "alt":"Net Ninja channel screeshot",
             "description":"Great content for all frameworks and backend" ,
             "tag":["creator"]
+        },
+        {
+            "name":"Pika Screenshots",
+            "link": "https://pika.rishimohan.me/",
+            "thumbnail": "pika",
+            "alt":"Pika Screenshot Homepage",
+            "description":"Pika allows us to make great screenshots for our portfolios",
+            "tag":["design"]
         }
     ]
 }

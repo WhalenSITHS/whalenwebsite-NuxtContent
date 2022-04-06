@@ -5,7 +5,9 @@
     <p class="resource-text">
       {{ text }}
     </p>
-    <a class="resource-btn" :href="link" target="_blank">Visit</a>
+    <a class="resource-btn" :href="link" target="_blank" :style="getColor"
+      >Visit</a
+    >
   </div>
 </template>
 
@@ -40,6 +42,9 @@ export default {
     },
     getLink: function () {
       return this.link
+    },
+    getColor() {
+      return 'background-color: ' + this.colors[`${this.tag[0]}`]
     },
     getBorder() {
       return 'border-top: 20px solid ' + this.colors[`${this.tag[0]}`]
@@ -103,12 +108,12 @@ export default {
   font-size: var(--h4);
   width: 15rem;
   height: 3.5rem;
-  color: var(--white);
+  color: black;
   border: 2px solid transparent;
   padding: 0.3rem 2rem;
   text-decoration: none;
   transition: all 0.4s;
-  background-color: transparent;
+
   border-radius: 3rem;
   transition: all 0.3s;
   text-align: center;
@@ -118,7 +123,6 @@ export default {
   justify-content: center;
   position: relative;
   margin: 1rem auto;
-  background-color: var(--secondary);
 }
 
 .resource-btn:hover {
@@ -132,7 +136,7 @@ export default {
   width: 100%;
   border-radius: 3rem;
   position: absolute;
-  background-color: var(--secondary);
+  background-color: inherit;
   top: 0;
   left: 0;
   z-index: -1;
