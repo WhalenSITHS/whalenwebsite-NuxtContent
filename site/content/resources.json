@@ -6,7 +6,7 @@
             "thumbnail": "pika",
             "alt":"Pika Screenshot Homepage",
             "description":"Pika allows us to make great screenshots for our portfolios",
-            "tag":"design"
+            "tag":["design"]
         },
         {
             "name":"Vanta JS",
@@ -14,7 +14,7 @@
             "thumbnail": "vanta",
             "alt":"Vanta Homepage",
             "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
-            "tag":"design"
+            "tag":["design"]
         },
         {
             "name":"Glass Morphism Generator",
