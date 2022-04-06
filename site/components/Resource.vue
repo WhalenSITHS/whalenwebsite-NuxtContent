@@ -37,7 +37,7 @@ export default {
 .resource-card {
   width: 21%;
   display: flex;
-  height: 40vh;
+  height: 39rem;
   padding: 1rem 2rem;
   flex-direction: column;
   justify-content: space-around;
@@ -45,7 +45,27 @@ export default {
   background-color: #fff;
   color: var(--primary);
   border-radius: 10px;
-  margin: 3rem auto;
+  margin: 5rem auto;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 1300px) {
+  .resource-card {
+    height: 36rem;
+    width: 27%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .resource-card {
+    width: 38%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .resource-card {
+    width: 60%;
+  }
+}
+.resource-card:hover {
+  transform: translateY(-5px);
 }
 .resource-img {
   margin-top: 1rem;
@@ -86,7 +106,7 @@ export default {
 }
 
 .resource-btn:hover {
-  transform: translateY(-2px);
+  transform: scale(1.2);
   box-shadow: 0 10px 0.5rem rgba(color(black), 0.6);
 }
 .resource-btn::after {
@@ -96,6 +116,7 @@ export default {
   width: 100%;
   border-radius: 3rem;
   position: absolute;
+  background-color: var(--secondary);
   top: 0;
   left: 0;
   z-index: -1;
