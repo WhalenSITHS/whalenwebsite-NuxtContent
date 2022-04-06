@@ -4,7 +4,7 @@
     <ul class="link-wrapper">
       <nuxt-link to="/" class="nav-item-desk">Student Work</nuxt-link>
       <nuxt-link to="/" class="nav-item-desk">Blog</nuxt-link>
-      <nuxt-link to="/" class="nav-item-desk">Resources</nuxt-link>
+      <nuxt-link to="/resources" class="nav-item-desk">Resources</nuxt-link>
     </ul>
   </nav>
 </template>

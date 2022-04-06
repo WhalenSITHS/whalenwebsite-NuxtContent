@@ -1,6 +1,6 @@
 <template>
   <section class="resources">
-    <h2 class="section-title">Development</h2>
+    <h2 class="section-title">{{ css }}</h2>
     <div class="resource-section">
       <Resource
         v-for="resource in resources.resources"
@@ -19,17 +19,29 @@
 export default {
   data() {
     return {
-      resources: null,
+      resources: [],
       creators: [],
-      development: [],
-      css: [],
-      design: [],
-      js: [],
+      test: null,
+      DevResources: [],
+      CSSResources: [],
+      DesignResources: [],
+      JSResources: [],
     }
   },
   async fetch() {
     this.resources = await this.$content('resources').fetch()
-    this.creators =
+  },
+  mounted() {
+    this.CSSResources = this.resources.resources.filter(
+      (el) => el.tag === 'css'
+    )
+  },
+  computed: {
+    css: function () {
+      let test = this.resources.resources
+
+      return test[0]
+    },
   },
 }
 </script>
