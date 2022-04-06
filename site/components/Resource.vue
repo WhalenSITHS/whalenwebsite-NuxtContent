@@ -17,7 +17,7 @@ export default {
     image: String,
     alt: String,
     link: String,
-    tag: String,
+    tag: Array,
   },
   data() {
     return {
@@ -42,7 +42,7 @@ export default {
       return this.link
     },
     getBorder() {
-      return 'border-top: 20px solid ' + this.colors[`${this.tag}`]
+      return 'border-top: 20px solid ' + this.colors[`${this.tag[0]}`]
     },
   },
 }

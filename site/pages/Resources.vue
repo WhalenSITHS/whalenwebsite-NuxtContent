@@ -5,7 +5,7 @@
       <ResourcePill color="JS" title="JavaScript" />
       <ResourcePill color="CSS" title="CSS" />
       <ResourcePill color="Design" title="Design" />
-      <ResourcePill color="Content" title="Content Makers" />
+      <ResourcePill color="Content" title="Content Creators" />
       <ResourcePill color="Dev" title="Development" />
     </ul>
 
@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       resources: [],
+      All: [],
       CreatorResources: [],
       DevResources: [],
       CSSResources: [],
@@ -39,22 +40,27 @@ export default {
   async fetch() {
     this.resources = await this.$content('resources').fetch()
     this.CSSResources = this.resources.resources.filter(
-      (el) => el.tag === 'css'
+      (el) => el.tag[0] === 'css'
     )
     this.JSResources = this.resources.resources.filter((el) => el.tag === 'js')
     this.DevResources = this.resources.resources.filter(
-      (el) => el.tag === 'development'
+      (el) => el.tag[0] === 'development'
     )
     this.CreatorResources = this.resources.resources.filter(
-      (el) => el.tag === 'creator'
+      (el) => el.tag[0] === 'creator'
     )
     this.DesignResources = this.resources.resources.filter(
-      (el) => el.tag === 'design'
+      (el) => el.tag[0] === 'design'
     )
   },
 
   computed: {
-    sortResources() {},
+    sortResources(sortType) {
+      if (this.sortType === 'All') return this.resources
+      else {
+        this.resources.resources.filter((el) => el.tag[0] === `${sortType}`)
+      }
+    },
   },
 }
 </script>

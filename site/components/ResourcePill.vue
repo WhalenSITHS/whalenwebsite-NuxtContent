@@ -1,5 +1,5 @@
 <template>
-  <a :href="getResource" class="resource-pill" :style="getColor">
+  <a class="resource-pill" :style="getColor">
     {{ title }}
   </a>
 </template>
@@ -32,8 +32,8 @@ export default {
 
 <style scoped>
 .resource-pill {
-  font-size: var(--h4);
-  width: 22rem;
+  font-size: 1.6rem;
+  width: 19rem;
   height: 5rem;
   color: #000;
 
