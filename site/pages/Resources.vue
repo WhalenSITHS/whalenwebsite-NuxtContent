@@ -1,6 +1,9 @@
 <template>
   <section class="resources">
     <h2 class="filter">Filter By</h2>
+    <!--  <span class="icon about-icon"><fa :icon="['fab', 'youtube']" /></span>
+    <span class="icon about-icon"><fa icon="laptop-code" /></span> -->
+
     <multiselect
       track-by="drop"
       label="drop"
@@ -90,6 +93,11 @@ export default {
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <style>
+.about-icon {
+  font-size: var(--h2);
+  color: red;
+  margin: 5%;
+}
 .filter {
   color: var(--secondary);
   font-weight: 700;
@@ -124,5 +132,12 @@ export default {
 .multi {
   width: 30vw;
   margin: 3rem auto;
+  height: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .multi {
+    width: 60vw;
+  }
 }
 </style>

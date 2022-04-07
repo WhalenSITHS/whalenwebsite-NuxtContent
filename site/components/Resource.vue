@@ -2,6 +2,7 @@
   <div class="resource-card">
     <img :src="getImage" :alt="altText" class="resource-img" />
     <h2 class="resource-title">{{ title }}</h2>
+
     <p class="resource-text">
       {{ text }}
     </p>
@@ -22,8 +23,8 @@ export default {
   data() {
     return {
       colors: {
-        All: '#A5F3FC',
-        js: '#FEF08A',
+        All: 'fa icon="laptop-code" ',
+        js: `:icon="['fab', 'youtube']"`,
         css: '#bfdbfe',
         design: '#F87171',
         creator: '#BBF7D0',
