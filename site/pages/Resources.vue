@@ -1,42 +1,18 @@
 <template>
   <section class="resources">
     <h2 class="filter">Filter By</h2>
-    <ul class="sort">
-      <ResourcePill
-        color="All"
-        title="All"
-        @button-click="showJS(resources.resources)"
-      />
-      <ResourcePill
-        color="JS"
-        title="JavaScript"
-        @button-click="showJS(JSResources)"
-      />
-      <ResourcePill
-        color="CSS"
-        title="CSS"
-        @button-click="showJS(CSSResources)"
-      />
-      <ResourcePill
-        color="Design"
-        title="Design"
-        @button-click="showJS(DesignResources)"
-      />
-      <ResourcePill
-        color="Content"
-        title="Content Creators"
-        @button-click="showJS(CreatorResources)"
-      />
-      <ResourcePill
-        color="Dev"
-        title="Development"
-        @button-click="showJS(DevResources)"
-      />
-    </ul>
+    <multiselect
+      track-by="drop"
+      label="drop"
+      @input="sortBy(value)"
+      class="multi"
+      v-model="value"
+      :options="options"
+    ></multiselect>
 
     <div class="resource-section">
       <Resource
-        v-for="resource in All"
+        v-for="resource in SortedResources"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
@@ -50,11 +26,23 @@
 </template>
 
 <script>
+import Multiselect from 'vue-multiselect'
 export default {
+  components: { Multiselect },
   data() {
     return {
+      value: null,
+      options: [
+        { cat: [], drop: 'All' },
+        { cat: [], drop: 'JavaScript' },
+        { cat: [], drop: 'CSS' },
+        { cat: [], drop: 'Design' },
+        { cat: [], drop: 'Development' },
+        { cat: [], drop: 'Content Creators' },
+      ],
       resources: [],
-      All: [],
+      AllResources: [],
+      SortedResources: [],
       CreatorResources: [],
       DevResources: [],
       CSSResources: [],
@@ -64,31 +52,43 @@ export default {
   },
   async fetch() {
     this.resources = await this.$content('resources').fetch()
-    this.All = this.resources.resources
-    this.CSSResources = this.resources.resources.filter((el) =>
+    this.SortedResources = this.resources.resources
+    this.options[0].cat = this.resources.resources
+    this.options[2].cat = this.resources.resources.filter((el) =>
       el.tag.includes('css')
     )
-    this.JSResources = this.resources.resources.filter((el) =>
+    this.options[1].cat = this.resources.resources.filter((el) =>
       el.tag.includes('js')
     )
-    this.DevResources = this.resources.resources.filter((el) =>
+    this.options[4].cat = this.resources.resources.filter((el) =>
       el.tag.includes('development')
     )
-    this.CreatorResources = this.resources.resources.filter((el) =>
+    this.options[5].cat = this.resources.resources.filter((el) =>
       el.tag.includes('creator')
     )
-    this.DesignResources = this.resources.resources.filter((el) =>
+    this.options[3].cat = this.resources.resources.filter((el) =>
       el.tag.includes('design')
     )
   },
   methods: {
-    showJS: function (sortBy) {
-      this.All = sortBy
+    sortBy: function (value) {
+      if (value == null) {
+        this.SortedResources = this.options[0].cat
+      } else {
+        this.SortedResources = value.cat
+      }
+    },
+    test: function (value) {
+      if (value == null) {
+        console.log('test')
+      } else {
+        console.log(value.cat)
+      }
     },
   },
 }
 </script>
-
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <style>
 .filter {
   color: var(--secondary);
@@ -120,5 +120,9 @@ export default {
   justify-content: space-between;
   width: 80vw;
   margin: 7rem auto;
+}
+.multi {
+  width: 30vw;
+  margin: 3rem auto;
 }
 </style>
