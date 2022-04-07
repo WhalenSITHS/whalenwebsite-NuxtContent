@@ -96,7 +96,7 @@ export default {
 .resource-title {
   font-size: var(--h4);
   margin: 1rem 0;
-  text-align: left;
+  text-align: center;
 }
 .resource-text {
   font-size: var(--h5);
