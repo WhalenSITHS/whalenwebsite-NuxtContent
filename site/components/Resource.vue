@@ -5,10 +5,10 @@
     <ul class="pill-bottle">
       <ResourcePill v-for="tags in tag" :key="tags" :title="tags" />
     </ul>
-
     <p class="resource-text">
       {{ text }}
     </p>
+
     <a class="resource-btn" :href="link" target="_blank">Visit</a>
   </div>
 </template>
@@ -102,7 +102,7 @@ export default {
 }
 .resource-text {
   font-size: var(--h5);
-  height: 3.2rem;
+  min-height: 3.2rem;
   margin: 1rem 0;
   text-align: center;
 }

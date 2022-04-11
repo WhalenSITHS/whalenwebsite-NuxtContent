@@ -32,7 +32,7 @@ export default {
 <style>
 .resource-pill {
   font-size: 1rem;
-  cursor: pointer;
+
   height: 3rem;
   color: black;
   border: 2px solid transparent;
@@ -44,8 +44,10 @@ export default {
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius: 20px;
   width: 10rem;
+}
+.resource-pill:hover {
+  cursor: normal;
 }
 
 /* .resource-pill::after {
