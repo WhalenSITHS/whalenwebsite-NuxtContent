@@ -1,44 +1,42 @@
 <template>
-  <a class="resource-pill" @click="$emit('button-click')">
+  <h5 class="resource-pill" :style="getColor">
     {{ title }}
-  </a>
+  </h5>
 </template>
 
 <script>
 export default {
   props: {
     title: String,
-    color: String,
   },
   data() {
     return {
       colors: {
-        All: '#A5F3FC',
-        JS: '#FEF08A',
+        JavaScript: '#FEF08A',
         CSS: '#bfdbfe',
         Design: '#F87171',
-        Content: '#BBF7D0',
-        Dev: '#F5D0FE',
+        Creator: '#BBF7D0',
+        Development: '#F5D0FE',
+        Library: '#FEF08A',
       },
     }
   },
   computed: {
     getColor() {
-      return 'background-color: ' + this.colors[`${this.color}`]
+      return 'background-color: ' + this.colors[`${this.title}`]
     },
   },
 }
 </script>
 
-<style scoped>
+<style>
 .resource-pill {
-  font-size: 2.5rem;
+  font-size: 1rem;
   cursor: pointer;
-  height: 5rem;
-  color: white;
+  height: 3rem;
+  color: black;
   border: 2px solid transparent;
   text-decoration: none;
-  transition: all 0.4s;
   transition: all 0.3s;
   text-align: center;
   display: flex;
@@ -46,13 +44,11 @@ export default {
   align-items: center;
   justify-content: center;
   position: relative;
+  border-radius: 20px;
+  width: 10rem;
 }
 
-.resource-pill:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(color(black), 0.6);
-}
-.resource-pill::after {
+/* .resource-pill::after {
   content: '';
   display: inline-block;
   height: 100%;
@@ -73,5 +69,5 @@ export default {
   transform: translateY(-1px);
   transform: scaleX(1.5) scaleY(1.6);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
+} */
 </style>

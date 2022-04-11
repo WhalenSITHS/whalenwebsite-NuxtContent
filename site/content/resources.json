@@ -6,7 +6,7 @@
             "thumbnail": "myvscode",
             "alt":"image of my settings",
             "description":"My settings, recommend you copy them for class",
-            "tag":["development"]
+            "tag":["Development"]
         },
         
        
@@ -16,7 +16,7 @@
             "thumbnail": "glassui",
             "alt":"Glass UI Homepage",
             "description":"CSS UI Library and Glassmorphism generator",
-            "tag":["design", "css"]
+            "tag":["Design", "CSS"]
         },
         {
             "name":"Pocoloco",
@@ -24,7 +24,7 @@
             "thumbnail": "pocoloco",
             "alt":"Pocoloco Homepage",
             "description":"Generate dynamic backgrounds",
-            "tag":["design", "css"]
+            "tag":["Design", "CSS"]
         },
         {
             "name":"Copy and Paste CSS",
@@ -32,7 +32,7 @@
             "thumbnail": "copypaste",
             "alt":"Copy Paste Homepage",
             "description":"Ready made CSS to copy",
-            "tag":["css"]
+            "tag":["CSS"]
         },
         {
             "name":"Neumorphism.io",
@@ -40,7 +40,7 @@
             "thumbnail": "neumorphism",
             "alt":"neumorphism Homepage",
             "description":"Generate soft-ui code",
-            "tag":["design", "css"]
+            "tag":["Design", "CSS"]
         },
        
         {
@@ -49,7 +49,7 @@
             "thumbnail": "VScode",
             "alt":"VScode download Homepage",
             "description":"Official Code Editor of SITHS",
-            "tag":["development"]
+            "tag":["Development"]
         },
         {
             "name":"Vanta JS",
@@ -57,7 +57,7 @@
             "thumbnail": "vanta",
             "alt":"Vanta Homepage",
             "description":"VantaJS allows you to generate code for interactive backgrounds developed in ThreeJS",
-            "tag":["design", "css"]
+            "tag":["Design", "CSS"]
         },
         {
             "name":"Codepen",
@@ -65,7 +65,7 @@
             "thumbnail": "codepen",
             "alt":"codepen Homepage",
             "description":"build, test and discover front end code",
-            "tag":["development"]
+            "tag":["Development"]
         },
         {
             "name":"Firebase",
@@ -73,7 +73,7 @@
             "thumbnail": "firebase",
             "alt":"Firebase Homepage",
             "description":"Backend as a service",
-            "tag":["js"]
+            "tag":["JavaScript"]
         },
         {
             "name":"Stackoverflow",
@@ -81,7 +81,7 @@
             "thumbnail": "stack",
             "alt":"Stackoverflow Homepage",
             "description":"resource for asking questions",
-            "tag":["js"]
+            "tag":["JavaScript"]
         },
         {
             "name":"VueJS Docs",
@@ -89,7 +89,7 @@
             "thumbnail": "vuejs",
             "alt":"Vue Homepage",
             "description":"Vue has stellar docs for learning",
-            "tag":["js"]
+            "tag":["JavaScript"]
         },
         {
             "name":"Cubic Bezier",
@@ -97,7 +97,7 @@
             "thumbnail": "cubic",
             "alt":"Cubic Bezier Homepage",
             "description":"Cubic Bezier can help you nail down animation timings.",
-            "tag":["css"]
+            "tag":["CSS"]
         },
         {
             "name":"Type Scale",
@@ -105,7 +105,7 @@
             "thumbnail": "typescale",
             "alt":"typescale Homepage",
             "description":"Visual Calculator for Typography",
-            "tag":["design", "css"]
+            "tag":["Design", "CSS"]
         },
         {
             "name":"Animate on Scroll",
@@ -113,7 +113,7 @@
             "thumbnail": "aos",
             "alt":"AOS Homepage",
             "description":"AOS is a simple to use, lightweight library for animating content based on scroll position",
-            "tag":["js", "lib"]
+            "tag":["JavaScript", "Library"]
         },
         {
             "name":"Undraw Illustrations",
@@ -121,7 +121,7 @@
             "thumbnail": "undraw",
             "alt":"Undraw Homepage",
             "description":"Undraw provides tons of quality, free SVG's that you can customize the color of before downloading",
-            "tag":["design"]
+            "tag":["Design"]
         },
         {
             "name":"Emmet Cheat Sheet",
@@ -129,7 +129,7 @@
             "thumbnail": "emmett",
             "alt":"Emmet Homepage",
             "description":"Check out this useful Emmet Cheat Sheet for VSCode",
-            "tag":["development"]
+            "tag":["Development"]
         },
         
         {
@@ -138,7 +138,7 @@
             "thumbnail": "clippy",
             "alt":"bennetfeely homepage",
             "description":"Easily create CSS clip paths with a handy GUI.",
-            "tag":["css"]
+            "tag":["CSS"]
         },
         {
             "name":"Unsplash",
@@ -146,7 +146,7 @@
             "thumbnail": "unsplash",
             "alt":"Unsplash homepage",
             "description":"Great Resource for Stock Images",
-            "tag":["design"]
+            "tag":["Design"]
         },
         {
             "name":"Pixabay",
@@ -154,7 +154,7 @@
             "thumbnail": "pixabay",
             "alt":"pixabay homepage",
             "description":"Stock images",
-            "tag":["design"]
+            "tag":["Design"]
         },
         {
             "name":"Pexels",
@@ -162,7 +162,7 @@
             "thumbnail": "Pexels",
             "alt":"Pexels homepage",
             "description":"Pexels offers free stock videos and images",
-            "tag":["design"]
+            "tag":["Design"]
         },
         {
             "name":"Flaticon",
@@ -170,7 +170,7 @@
             "thumbnail": "Flaticon",
             "alt":"flaticon homepage",
             "description":"Free icons and SVG's",
-            "tag":["design"]
+            "tag":["Design"]
         },
         {
             "name":"Design Course",
@@ -178,7 +178,7 @@
             "thumbnail": "designcourse",
             "alt":"designcourse channel youtube",
             "description":"This YouTube channel as all the amazing design and animation tutorials you could want from a YouTube channel. ",
-            "tag":["creator"]
+            "tag":["Creator"]
         },
         {
             "name":"DevEd",
@@ -186,7 +186,7 @@
             "thumbnail": "deved",
             "alt":"Dev Ed Youtube Channel Screenshot",
             "description":"Lots of react and vanilla design tutorials",
-            "tag":["creator"]
+            "tag":["Creator"]
         },
         {
             "name":"Traversy Media",
@@ -194,7 +194,7 @@
             "thumbnail": "traversy",
             "alt":"Traversy Media channel",
             "description":"Tutorials on all matter of web dev",
-            "tag":["creator"]
+            "tag":["Creator"]
         },
         {
             "name":"Level Up Tuts",
@@ -202,7 +202,7 @@
             "thumbnail": "levelup",
             "alt":"Level Up Tuts channel screeshot",
             "description":"Great SvelteJS content",
-            "tag":["creator"]
+            "tag":["Creator"]
         },
         {
             "name":"Net Ninja",
@@ -210,7 +210,7 @@
             "thumbnail": "ninja",
             "alt":"Net Ninja channel screeshot",
             "description":"Great content for all frameworks and backend" ,
-            "tag":["creator"]
+            "tag":["Creator"]
         },
         {
             "name":"Pika Screenshots",
@@ -218,7 +218,7 @@
             "thumbnail": "pika",
             "alt":"Pika Screenshot Homepage",
             "description":"Pika allows us to make great screenshots for our portfolios",
-            "tag":["design"]
+            "tag":["Design"]
         }
     ]
 }

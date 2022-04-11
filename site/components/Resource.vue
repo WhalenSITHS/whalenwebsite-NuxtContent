@@ -2,6 +2,9 @@
   <div class="resource-card">
     <img :src="getImage" :alt="altText" class="resource-img" />
     <h2 class="resource-title">{{ title }}</h2>
+    <ul class="pill-bottle">
+      <ResourcePill v-for="tags in tag" :key="tags" :title="tags" />
+    </ul>
 
     <p class="resource-text">
       {{ text }}
@@ -23,8 +26,7 @@ export default {
   data() {
     return {
       colors: {
-        All: 'fa icon="laptop-code" ',
-        js: `:icon="['fab', 'youtube']"`,
+        js: '#FEF08A',
         css: '#bfdbfe',
         design: '#F87171',
         creator: '#BBF7D0',
@@ -100,6 +102,7 @@ export default {
 }
 .resource-text {
   font-size: var(--h5);
+  height: 3.2rem;
   margin: 1rem 0;
   text-align: center;
 }
@@ -149,5 +152,12 @@ export default {
   transform: translateY(-1px);
   transform: scaleX(1.5) scaleY(1.6);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.pill-bottle {
+  display: flex;
+  margin: 1rem auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 </style>

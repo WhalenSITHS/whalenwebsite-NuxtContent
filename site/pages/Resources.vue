@@ -58,19 +58,19 @@ export default {
     this.SortedResources = this.resources.resources
     this.options[0].cat = this.resources.resources
     this.options[2].cat = this.resources.resources.filter((el) =>
-      el.tag.includes('css')
+      el.tag.includes('CSS')
     )
     this.options[1].cat = this.resources.resources.filter((el) =>
-      el.tag.includes('js')
+      el.tag.includes('JavaScript')
     )
     this.options[4].cat = this.resources.resources.filter((el) =>
-      el.tag.includes('development')
+      el.tag.includes('Development')
     )
     this.options[5].cat = this.resources.resources.filter((el) =>
-      el.tag.includes('creator')
+      el.tag.includes('Creator')
     )
     this.options[3].cat = this.resources.resources.filter((el) =>
-      el.tag.includes('design')
+      el.tag.includes('Design')
     )
   },
   methods: {
