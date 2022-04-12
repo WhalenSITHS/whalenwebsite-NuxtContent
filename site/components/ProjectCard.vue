@@ -1,13 +1,18 @@
 <template>
   <div class="project-card">
-    <div class="project-img-container">
-      <img class="project-img" :src="imgSrc" :alt="altText" />
-    </div>
-    <ul class="stack-list">
-      <Logo v-for="tech in techStack" :key="tech" :source="tech" />
-    </ul>
-    <h2 class="project-card-title">{{ title }}</h2>
-    <a class="project-link">Learn More</a>
+    <nuxt-link
+      class="project-card-link"
+      :to="{ name: 'project', params: { project: project } }"
+    >
+      <div class="project-img-container">
+        <img class="project-img" :src="imgSrc" :alt="altText" />
+      </div>
+
+      <h2 class="project-card-title">{{ title }}</h2>
+      <ul class="stack-list">
+        <Logo v-for="tech in techStack" :key="tech" :source="tech" />
+      </ul>
+    </nuxt-link>
   </div>
 </template>
 
@@ -19,26 +24,36 @@ export default {
     altText: String,
     techStack: Array,
     projectPage: String,
+    project: String,
   },
 }
 </script>
 
 <style>
 .project-card {
-  height: 52rem;
-  width: 35%;
+}
+.project-card-link,
+.project-card:visited .project-card:active,
+.project-card:link {
+  height: 50rem;
+  width: 80%;
   display: flex;
   background-color: #040303;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 5rem auto;
 }
 .project-img-container {
   width: 100%;
-  height: 40%;
+  height: 70%;
 }
 .project-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -46,14 +61,16 @@ export default {
 .project-card-title {
   margin: 1rem auto;
   padding: 2rem 4rem;
+  font-size: var(--h3);
   border-bottom: 3px solid #fff;
+  width: 100%;
 }
 .stack-list {
-  margin: 1rem auto;
-  width: 40%;
+  margin: 2rem auto;
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .project-link {
   font-size: var(--h4);

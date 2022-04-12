@@ -6,6 +6,7 @@
       :title="project.title"
       :techStack="project.techStack"
       :imgSrc="project.image"
+      :project="project.project"
     />
   </section>
 </template>
@@ -27,5 +28,12 @@ export default {
 .student-work {
   width: 80vw;
   margin: 3rem auto;
+  display: grid;
+  list-style: none;
+  padding: 1rem;
+  grid-row-gap: 1rem;
+  width: 80vw;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5vw;
 }
 </style>
