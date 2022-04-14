@@ -14,6 +14,10 @@
     </ul>
 
     <p class="project-desc">{{ article.description }}</p>
+    <ul class="project-links-wrapper">
+      <GitLink :sourceLink="article.github" />
+      <SiteLink :sourceLink="article.siteLink" />
+    </ul>
   </section>
 </template>
 
@@ -53,5 +57,12 @@ export default {
 }
 .created-by {
   margin: 3rem auto;
+}
+.project-links-wrapper {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 </style>
