@@ -33,7 +33,7 @@ export default {
   padding: 1rem;
   grid-row-gap: 1rem;
   width: 80vw;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 5vw;
 }
 </style>
