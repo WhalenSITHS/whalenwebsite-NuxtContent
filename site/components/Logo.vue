@@ -43,7 +43,7 @@ export default {
 
 <style>
 .Logo-img {
-  height: 4rem;
+  height: 3.5rem;
   margin: 0.5rem 2rem;
 }
 </style>

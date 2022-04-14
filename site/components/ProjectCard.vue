@@ -62,11 +62,11 @@ export default {
   margin: 1rem auto;
   padding: 2rem 4rem;
   font-size: var(--h3);
-  border-bottom: 3px solid #fff;
+
   width: 100%;
 }
 .stack-list {
-  margin: 2rem auto;
+  margin: 1rem auto 1rem auto;
   width: 50%;
   display: flex;
   align-items: center;
