@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <section class="articles-wrapper">
+    <ArticlePreview v-for="article in articles" :key="article.title" />
+  </section>
 </template>
 
 <script>
@@ -15,4 +17,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.articles-wrapper {
+  width: 80vw;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+</style>

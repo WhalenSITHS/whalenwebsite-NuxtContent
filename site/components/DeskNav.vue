@@ -25,6 +25,7 @@ export default {
   width: 90vw;
   margin: 1rem auto;
 }
+
 @media screen and (max-width: 800px) {
   .desk-nav {
     display: none;
@@ -56,7 +57,7 @@ export default {
   background-size: 240%;
   transition: all 0.4s;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1440px) {
   .link-wrapper {
     width: 50%;
   }
