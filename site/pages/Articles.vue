@@ -1,6 +1,10 @@
 <template>
   <section class="articles-wrapper">
-    <ArticlePreview v-for="article in articles" :key="article.title" />
+    <ArticlePreview
+      v-for="article in articles"
+      :key="article.title"
+      :article="article"
+    />
   </section>
 </template>
 
