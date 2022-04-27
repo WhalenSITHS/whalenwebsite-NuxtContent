@@ -5,8 +5,8 @@
       <nuxt-link to="/StudentWork" class="nav-item-desk"
         >Student Work</nuxt-link
       >
-      <nuxt-link to="/" class="nav-item-desk">Blog</nuxt-link>
-      <nuxt-link to="/resources" class="nav-item-desk">Resources</nuxt-link>
+      <nuxt-link to="/Articles" class="nav-item-desk">Articles</nuxt-link>
+      <nuxt-link to="/Resources" class="nav-item-desk">Resources</nuxt-link>
     </ul>
   </nav>
 </template>
