@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1>{{ article.title }}</h1>
+  <article class="article">
+    <h1 class="article-title">{{ article.title }}</h1>
     <nuxt-content :document="article" />
-  </div>
+  </article>
 </template>
 
 <script>
@@ -14,4 +14,19 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.article {
+  width: 70vw;
+  margin: 5rem auto;
+}
+.article-title {
+  margin: 2rem auto;
+}
+.nuxt-content {
+  font-size: var(--h4);
+  line-height: 1.5;
+}
+.nuxt-content * {
+  margin: 3rem auto;
+}
+</style>

@@ -1,13 +1,19 @@
 <template>
   <div class="article-card">
-    <Nuxt-link to="index" class="article-card-img-wrapper">
+    <Nuxt-link
+      :to="{ name: 'slug', params: { slug: article.slug } }"
+      class="article-card-img-wrapper"
+    >
       <img :src="getImg" alt="test image" class="article-card-img" />
     </Nuxt-link>
     <div class="article-tag-wrapper">
       <h4 class="article-tag" :style="getColor">{{ article.tags[0] }}</h4>
       <h5 class="article-card-date">{{ article.date }}</h5>
     </div>
-    <Nuxt-link class="article-card-title-wrapper" to="index">
+    <Nuxt-link
+      class="article-card-title-wrapper"
+      :to="{ name: 'slug', params: { slug: article.slug } }"
+    >
       <h2 class="article-card-title">
         {{ article.title }}
       </h2>
@@ -47,7 +53,10 @@ export default {
 
 <style>
 .article-card {
-  height: 45rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 27%;
   margin: 3rem auto;
 }
@@ -97,6 +106,9 @@ export default {
 .article-card-author {
   font-size: var(--h5);
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: center;
+  background-color: var(--secondary);
+  width: 40%;
+  padding: 1rem;
 }
 </style>
