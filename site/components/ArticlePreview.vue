@@ -1,7 +1,7 @@
 <template>
   <div class="article-card">
     <Nuxt-link
-      :to="{ name: 'slug', params: { slug: article.slug } }"
+      :to="{ name: 'article', params: { article: article.slug } }"
       class="article-card-img-wrapper"
     >
       <img :src="getImg" alt="test image" class="article-card-img" />
@@ -12,7 +12,7 @@
     </div>
     <Nuxt-link
       class="article-card-title-wrapper"
-      :to="{ name: 'slug', params: { slug: article.slug } }"
+      :to="{ name: 'article', params: { slug: article.slug } }"
     >
       <h2 class="article-card-title">
         {{ article.title }}
