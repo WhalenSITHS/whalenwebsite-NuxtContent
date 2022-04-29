@@ -9,6 +9,8 @@
   --background-primary: var(--primary);
   --JS: #a5f3fc;
   --CSS: #bfdbfe;
+  --article-background: var(--background-primary);
+  --article-text: var(--white);
   /* Styles */
 
   /* Type */

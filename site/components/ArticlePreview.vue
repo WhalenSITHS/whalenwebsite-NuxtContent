@@ -1,7 +1,7 @@
 <template>
   <div class="article-card">
     <Nuxt-link
-      :to="{ name: 'slug', params: { slug: article.slug } }"
+      :to="`/articles/${article.slug}`"
       class="article-card-img-wrapper"
     >
       <img :src="getImg" alt="test image" class="article-card-img" />

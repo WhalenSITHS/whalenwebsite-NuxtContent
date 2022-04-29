@@ -10,8 +10,8 @@
     <transition name="slide">
       <ul v-if="openMenu" class="nav" @click="closeNav">
         <nuxt-link to="/" class="nav-item">Home</nuxt-link>
-        <nuxt-link to="/StudentWork" class="nav-item">Student Work</nuxt-link>
-        <nuxt-link to="/Articles" class="nav-item">Articles</nuxt-link>
+        <nuxt-link to="/projects" class="nav-item">Student Work</nuxt-link>
+        <nuxt-link to="/articles" class="nav-item">Articles</nuxt-link>
         <nuxt-link to="/Resources" class="nav-item">Resources</nuxt-link>
         <nuxt-link to="/Theme" class="nav-item">Theme</nuxt-link>
       </ul>

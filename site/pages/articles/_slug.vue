@@ -18,9 +18,14 @@ export default {
 .article {
   width: 70vw;
   margin: 5rem auto;
+  /* background-color: white;
+  color: black; */
+  padding: 3rem 5rem;
 }
 .article-title {
-  margin: 2rem auto;
+  margin: 5rem auto;
+
+  font-weight: 700;
 }
 .nuxt-content {
   font-size: var(--h4);
@@ -28,5 +33,10 @@ export default {
 }
 .nuxt-content * {
   margin: 3rem auto;
+}
+.nuxt-content h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 </style>

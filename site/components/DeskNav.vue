@@ -2,10 +2,8 @@
   <nav class="desk-nav">
     <nuxt-link to="/" id="home-btn">MIKEWHALEN.TECH</nuxt-link>
     <ul class="link-wrapper">
-      <nuxt-link to="/StudentWork" class="nav-item-desk"
-        >Student Work</nuxt-link
-      >
-      <nuxt-link to="/Articles" class="nav-item-desk">Articles</nuxt-link>
+      <nuxt-link to="/projects" class="nav-item-desk">Student Work</nuxt-link>
+      <nuxt-link to="/articles" class="nav-item-desk">Articles</nuxt-link>
       <nuxt-link to="/Resources" class="nav-item-desk">Resources</nuxt-link>
     </ul>
   </nav>

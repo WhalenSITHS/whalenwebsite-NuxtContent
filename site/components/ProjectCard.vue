@@ -1,9 +1,6 @@
 <template>
   <div class="project-card">
-    <nuxt-link
-      class="project-card-link"
-      :to="{ name: 'project', params: { project: project } }"
-    >
+    <nuxt-link class="project-card-link" :to="`/projects/${project}`">
       <div class="project-img-container">
         <img class="project-img" :src="imgSrc" :alt="altText" />
       </div>
