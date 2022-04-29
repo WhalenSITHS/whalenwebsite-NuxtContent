@@ -41,7 +41,10 @@
   --headerHeight: 3rem;
   --borderRadius: 10px;
 }
-
+.Light-mode {
+  --article-background: #fff;
+  --article-text: black;
+}
 html {
   box-sizing: border-box;
   scrollbar-width: thick;

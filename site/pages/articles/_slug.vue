@@ -1,5 +1,6 @@
 <template>
   <article class="article">
+    <ThemeSwitcher />
     <h1 class="article-title">{{ article.title }}</h1>
     <nuxt-content :document="article" />
   </article>
@@ -18,9 +19,15 @@ export default {
 .article {
   width: 70vw;
   margin: 5rem auto;
-  /* background-color: white;
-  color: black; */
+  background-color: var(--article-background);
+  color: var(--article-text);
   padding: 3rem 5rem;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 800px) {
+  .article {
+    width: 90vw;
+  }
 }
 .article-title {
   margin: 5rem auto;

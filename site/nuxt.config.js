@@ -38,11 +38,11 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
-  buildModules: ['@nuxtjs/fontawesome'],
+  buildModules: ['@nuxtjs/fontawesome', '@nuxtjs/color-mode'],
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faLaptopCode', 'faPalette'],
+      solid: ['faLaptopCode', 'faPalette', 'faMoon', 'faSun'],
       brands: ['faYoutube', 'faJs', 'faCss3Alt'],
     },
   },
