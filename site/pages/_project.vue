@@ -1,22 +1,22 @@
 <template>
   <section class="project-container">
-    <h1 class="project-title">{{ work.title }}</h1>
+    <h1 class="project-title">{{ article.title }}</h1>
 
-    <ProjectImage :imageSrc="work.image" :altText="work.altText" />
+    <ProjectImage :imageSrc="article.image" :altText="article.altText" />
     <h3 class="created-by">Created By</h3>
     <ul class="developers">
       <Alumni
-        v-for="alumni in work.developers"
+        v-for="alumni in article.developers"
         :key="alumni.name"
         :author="alumni.name"
         :school="alumni.school"
       />
     </ul>
 
-    <p class="project-desc">{{ work.description }}</p>
+    <p class="project-desc">{{ article.description }}</p>
     <ul class="project-links-wrapper">
-      <GitLink :sourceLink="work.github" />
-      <SiteLink :sourceLink="work.siteLink" />
+      <GitLink :sourceLink="article.github" />
+      <SiteLink :sourceLink="article.siteLink" />
     </ul>
   </section>
 </template>
@@ -24,8 +24,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const work = await $content('projects', params.project).fetch()
-    return { work }
+    const article = await $content('projects', params.project).fetch()
+    return { article }
   },
 }
 </script>
