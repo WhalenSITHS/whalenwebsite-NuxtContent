@@ -30,4 +30,10 @@ export default {
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 900px) {
+  .articles-wrapper {
+    width: 90vw;
+    flex-direction: column;
+  }
+}
 </style>

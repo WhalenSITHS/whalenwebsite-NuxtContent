@@ -36,4 +36,9 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5vw;
 }
+@media screen and (max-width: 900px) {
+  .student-work {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

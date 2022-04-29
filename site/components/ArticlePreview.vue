@@ -111,4 +111,10 @@ export default {
   width: 40%;
   padding: 1rem;
 }
+@media screen and (max-width: 900px) {
+  .article-card {
+    width: 70vw;
+    flex-direction: column;
+  }
+}
 </style>

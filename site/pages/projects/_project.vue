@@ -65,4 +65,9 @@ export default {
   align-items: center;
   justify-content: space-around;
 }
+@media screen and (max-width: 900px) {
+  .project-container {
+    width: 90vw;
+  }
+}
 </style>

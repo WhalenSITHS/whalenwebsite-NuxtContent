@@ -23,4 +23,9 @@ export default {
 .project-splash-image {
   width: 80rem;
 }
+@media screen and (max-width: 900px) {
+  .project-splash-image {
+    width: 90%;
+  }
+}
 </style>
