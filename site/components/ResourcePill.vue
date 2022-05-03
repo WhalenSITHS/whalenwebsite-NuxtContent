@@ -45,6 +45,7 @@ export default {
   justify-content: center;
   position: relative;
   width: 10rem;
+  border-radius: 15px;
 }
 .resource-pill:hover {
   cursor: normal;
