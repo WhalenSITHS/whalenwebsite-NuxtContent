@@ -42,6 +42,7 @@ export default {
         { cat: [], drop: 'Design' },
         { cat: [], drop: 'Development' },
         { cat: [], drop: 'Content Creators' },
+        { cat: [], drop: 'Library' },
       ],
       resources: [],
       AllResources: [],
@@ -51,6 +52,7 @@ export default {
       CSSResources: [],
       DesignResources: [],
       JSResources: [],
+      LibraryResources: [],
     }
   },
   async fetch() {
@@ -71,6 +73,9 @@ export default {
     )
     this.options[3].cat = this.resources.resources.filter((el) =>
       el.tag.includes('Design')
+    )
+    this.options[6].cat = this.resources.resources.filter((el) =>
+      el.tag.includes('Library')
     )
   },
   methods: {

@@ -16,7 +16,9 @@ export default {
     }
   },
   async fetch() {
-    this.articles = await this.$content('articles').fetch()
+    this.articles = await this.$content('articles')
+      .sortBy('slug', 'desc')
+      .fetch()
   },
 }
 </script>

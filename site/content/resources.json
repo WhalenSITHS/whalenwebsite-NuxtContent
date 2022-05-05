@@ -219,6 +219,22 @@
             "alt":"Pika Screenshot Homepage",
             "description":"Pika allows us to make great screenshots for our portfolios",
             "tag":["Design"]
+        },
+        {
+            "name":"HowlerJS",
+            "link": "https://howlerjs.com/",
+            "thumbnail": "howler",
+            "alt":"HowlerJS Homepage",
+            "description":"howler.js makes working with audio in JavaScript easy and reliable across all platforms",
+            "tag":["Library"]
+        },
+        {
+            "name":"Huemint",
+            "link": "https://huemint.com/",
+            "thumbnail": "huemint",
+            "alt":"Huemint Homepage",
+            "description":"Huemint uses machine learning to create unique color schemes for your brand, website or graphic",
+            "tag":["Design"]
         }
     ]
 }
