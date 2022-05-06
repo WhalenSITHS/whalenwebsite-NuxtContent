@@ -4,8 +4,10 @@
       <div class="text-container">
         <h1 class="header-primary">Full Stack Educator</h1>
         <h2 class="header-secondary">Staten Island Technical HS</h2>
-        <nuxt-link to="/" class="btn header-btn-primary">Resources</nuxt-link>
-        <nuxt-link to="/" class="btn header-btn-secondary"
+        <nuxt-link to="/Resources" class="btn header-btn-primary"
+          >Resources</nuxt-link
+        >
+        <nuxt-link to="/Projects" class="btn header-btn-secondary"
           >See Our Work</nuxt-link
         >
       </div>

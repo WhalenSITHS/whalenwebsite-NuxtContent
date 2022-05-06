@@ -27,6 +27,7 @@ export default {
 @media screen and (max-width: 800px) {
   .article {
     width: 90vw;
+    padding: 2rem 1.5rem;
   }
 }
 .article-title {
@@ -34,6 +35,7 @@ export default {
 
   font-weight: 700;
 }
+
 @media screen and (max-width: 900px) {
   .article-title {
     margin: 3rem auto;
