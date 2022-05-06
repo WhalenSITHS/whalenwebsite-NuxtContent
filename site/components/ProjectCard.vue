@@ -32,9 +32,17 @@ export default {
     width: 100%;
   }
 }
+
+.project-card:hover .project-card-link,
+.project-card:visited .project-card:active,
+.project-card:link {
+  background-color: white;
+  color: black;
+}
 .project-card-link,
 .project-card:visited .project-card:active,
 .project-card:link {
+  transition: all 0.3s;
   height: 50rem;
   width: 80%;
   display: flex;
