@@ -9,4 +9,5 @@ siteLink: "https://bone-apple-teeth.herokuapp.com/"
 description: "Bone Apple Teeth is a fullstack application designed for sharing and viewing recipes. B.A.T. utilizes Vuesax for styling, NuxtJS for a front-end framework and Firebase for data storage. Bone Apple Teeth is hosted on Heroku in order to persit authentication and maintain the server-side rendering in Nuxt."
 Video: "https://www.youtube.com/watch?v=HW5gmYyIBzI"
 project: TechTimesCMS
+year: 2021
 ---

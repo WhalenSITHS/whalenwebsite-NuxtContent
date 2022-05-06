@@ -26,6 +26,8 @@ export default {
         Nuxt: 'https://res.cloudinary.com/dbopxlpuy/image/upload/f_auto,q_auto/v1649768534/Logos/Nuxt_logo_jcmwuu.svg',
         Tailwind:
           'https://res.cloudinary.com/dbopxlpuy/image/upload/c_scale,f_auto,q_auto,w_512/v1649770103/Logos/tailwind_uou0cq.svg',
+        Socket:
+          'https://res.cloudinary.com/dbopxlpuy/image/upload/c_scale,f_auto,q_auto,w_512/v1649770103/Logos/Socket-io_hddoum.svg',
       },
     }
   },

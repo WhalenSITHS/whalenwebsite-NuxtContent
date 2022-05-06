@@ -19,7 +19,9 @@ export default {
     }
   },
   async fetch() {
-    this.projects = await this.$content('projects').fetch()
+    this.projects = await this.$content('projects')
+      .sortBy('year', 'desc')
+      .fetch()
   },
 }
 </script>

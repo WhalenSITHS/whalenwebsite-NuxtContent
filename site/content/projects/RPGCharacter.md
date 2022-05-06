@@ -8,4 +8,5 @@ github: "https://github.com/staten-island-tech/vue-reactivity-project-alstnc"
 siteLink: "https://rpgcharactergen.netlify.app/"
 description: This project was designed to illustrate Vue's reactivity and data binding. The project also allows the user to download an image of the character they designed.
 project: RPGCharacter
+year: 2022
 ---

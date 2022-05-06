@@ -8,5 +8,6 @@ github: "https://github.com/staten-island-tech/api-project-mwah"
 siteLink: "https://fancy-time.netlify.app/"
 description: "Fancytime was developed during Karis's sophomore year of high school. The project is designed to teach students about asynchronous JavaScript through calling external API's. The project also utilizes Vite. Karis choose to use the Animal Crossing API."
 project: Fancytime
+year: 2022
 
 ---

@@ -8,5 +8,5 @@ github: "https://github.com/staten-island-tech/vue-reactivity-project-popplio2"
 siteLink: "https://scrappynotes.netlify.app/"
 description: "This project was designed to show Vue's reactivity and data binding. Daniel added a theme switcher because everyone knows having more themes is better. "
 project: Scrappynotes
-
+year: 2022
 ---
