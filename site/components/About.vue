@@ -90,6 +90,7 @@ export default {}
     flex-direction: column;
     align-items: center;
     width: 95vw;
+    height: auto;
   }
   .about-text-wrapper,
   .about-image-wrapper {

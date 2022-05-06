@@ -82,7 +82,8 @@ export default {
 }
 @media screen and (max-width: 700px) {
   .resource-card {
-    width: 60%;
+    width: 75%;
+    height: 40rem;
   }
 }
 .resource-card:hover {

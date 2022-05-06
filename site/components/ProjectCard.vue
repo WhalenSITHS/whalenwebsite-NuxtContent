@@ -27,8 +27,6 @@ export default {
 </script>
 
 <style>
-.project-card {
-}
 .project-card-link,
 .project-card:visited .project-card:active,
 .project-card:link {
