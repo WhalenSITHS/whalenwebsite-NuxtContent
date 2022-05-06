@@ -34,6 +34,13 @@ export default {
 
   font-weight: 700;
 }
+@media screen and (max-width: 900px) {
+  .article-title {
+    margin: 3rem auto;
+    font-size: var(--h2);
+    font-weight: 700;
+  }
+}
 .nuxt-content {
   font-size: var(--h4);
   line-height: 1.5;

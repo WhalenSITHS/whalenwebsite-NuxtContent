@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 900px) {
+  .project-card {
+    width: 100%;
+  }
+}
 .project-card-link,
 .project-card:visited .project-card:active,
 .project-card:link {

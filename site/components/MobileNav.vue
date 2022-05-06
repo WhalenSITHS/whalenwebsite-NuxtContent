@@ -13,7 +13,6 @@
         <nuxt-link to="/projects" class="nav-item">Student Work</nuxt-link>
         <nuxt-link to="/articles" class="nav-item">Articles</nuxt-link>
         <nuxt-link to="/Resources" class="nav-item">Resources</nuxt-link>
-        <nuxt-link to="/Theme" class="nav-item">Theme</nuxt-link>
       </ul>
     </transition>
   </nav>

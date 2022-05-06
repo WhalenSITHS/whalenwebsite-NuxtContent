@@ -34,13 +34,13 @@ export default {
   list-style: none;
   padding: 1rem;
   grid-row-gap: 1rem;
-  width: 80vw;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5vw;
 }
 @media screen and (max-width: 900px) {
   .student-work {
     grid-template-columns: repeat(1, 1fr);
+    width: 90vw;
   }
 }
 </style>
