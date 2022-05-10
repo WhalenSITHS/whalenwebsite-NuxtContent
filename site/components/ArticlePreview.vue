@@ -12,7 +12,7 @@
     </div>
     <Nuxt-link
       class="article-card-title-wrapper"
-      :to="{ name: 'slug', params: { slug: article.slug } }"
+      :to="`/articles/${article.slug}`"
     >
       <h2 class="article-card-title">
         {{ article.title }}
