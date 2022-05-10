@@ -1,6 +1,7 @@
 <template>
   <nav class="desk-nav">
     <nuxt-link to="/" id="home-btn">MIKEWHALEN.TECH</nuxt-link>
+
     <ul class="link-wrapper">
       <nuxt-link to="/projects" class="nav-item-desk">Student Work</nuxt-link>
       <nuxt-link to="/articles" class="nav-item-desk">Articles</nuxt-link>
