@@ -21,7 +21,7 @@
       <a
         href="https://pkmnsim.netlify.app/"
         target="_blank"
-        class="btn header-btn-secondary"
+        class="btn header-btn-secondary about-btn-animation"
       >
         Check It Out
       </a>
