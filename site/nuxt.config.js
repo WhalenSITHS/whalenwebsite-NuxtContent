@@ -38,7 +38,11 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
-  buildModules: ['@nuxtjs/fontawesome', '@nuxtjs/color-mode'],
+  buildModules: [
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/color-mode',
+    'nuxt-gsap-module',
+  ],
   fontawesome: {
     component: 'fa',
     icons: {
@@ -51,7 +55,12 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
-
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true,
+    },
+  },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     nestedProperties: ['resources.tag'],

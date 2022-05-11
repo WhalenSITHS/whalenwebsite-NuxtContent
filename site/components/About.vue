@@ -1,11 +1,11 @@
 <template>
   <section class="about">
     <div class="about-text-wrapper">
-      <h2 class="about-header">Hello, I'm Mike Whalen</h2>
-      <h3 class="about-secondary">
+      <h2 class="about-header about-animation">Hello, I'm Mike Whalen</h2>
+      <h3 class="about-secondary about-animation">
         I teach high school students to develop full stack web apps
       </h3>
-      <h4 class="about-tertiary">
+      <h4 class="about-tertiary about-animation">
         Students learn to build applications using modern tech stacks through
         project based learning
       </h4>
