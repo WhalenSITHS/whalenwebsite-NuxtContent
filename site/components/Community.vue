@@ -49,7 +49,7 @@ export default {}
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
-  height: 90vh;
+  height: auto;
   justify-content: space-between;
   align-items: center;
 }

@@ -3,6 +3,7 @@
     <DeskNav />
     <MobileNav />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 

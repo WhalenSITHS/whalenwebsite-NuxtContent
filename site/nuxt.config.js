@@ -46,8 +46,21 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faLaptopCode', 'faPalette', 'faMoon', 'faSun'],
-      brands: ['faYoutube', 'faJs', 'faCss3Alt'],
+      solid: [
+        'faLaptopCode',
+        'faPalette',
+        'faMoon',
+        'faSun',
+        'faEnvelopeSquare',
+      ],
+      brands: [
+        'faYoutube',
+        'faJs',
+        'faCss3Alt',
+        'faGithubSquare',
+        'faTwitterSquare',
+        'faFacebookSquare',
+      ],
     },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
