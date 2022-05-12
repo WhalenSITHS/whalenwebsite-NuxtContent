@@ -8,12 +8,12 @@
         </h2>
         <nuxt-link
           to="/Resources"
-          class="btn header-btn-primary header-animation-2"
+          class="btn header-btn-primary header-animation"
           >Resources</nuxt-link
         >
         <nuxt-link
           to="/Projects"
-          class="btn header-btn-secondary header-animation-2"
+          class="btn header-btn-secondary header-animation"
           >See Our Work</nuxt-link
         >
       </div>

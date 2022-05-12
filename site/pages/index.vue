@@ -34,7 +34,7 @@ export default {
         duration: 0.3,
         opacity: 0,
         stagger: 0.2,
-        x: -350,
+        // x: -350,
       })
       tlH.from(
         '.header-image',
@@ -46,7 +46,7 @@ export default {
         },
         '<.2'
       )
-      tlH.from(
+      /*  tlH.from(
         '.header-animation-2',
         {
           duration: 0.3,
@@ -54,7 +54,7 @@ export default {
           stagger: 0.2,
         },
         '<.2'
-      )
+      ) */
 
       const tl = this.$gsap.timeline({
         scrollTrigger: '.about',
