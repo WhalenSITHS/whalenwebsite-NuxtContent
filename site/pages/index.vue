@@ -36,7 +36,16 @@ export default {
         stagger: 0.2,
         x: -350,
       })
-      tlH.from('.header-image', { duration: 0.5, y: 600, rotate: 90 }, '<.2')
+      tlH.from(
+        '.header-image',
+        {
+          duration: 1,
+          y: 600,
+          rotate: 90,
+          ease: 'expo.out',
+        },
+        '<.2'
+      )
       tlH.from(
         '.header-animation-2',
         {
@@ -90,6 +99,17 @@ export default {
         },
         '<'
       )
+
+      const tlComm = this.$gsap.timeline({
+        scrollTrigger: '.comm',
+        delay: 0.1,
+      })
+      tlComm.from('.comm-animation', {
+        duration: 0.8,
+        opacity: 0,
+        /*   ease: 'Power1.easeInOut', */
+        stagger: 0.1,
+      })
     },
   },
 }

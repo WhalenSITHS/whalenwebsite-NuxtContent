@@ -1,11 +1,11 @@
 <template>
   <section class="comm">
     <div class="comm-header-wrapper">
-      <h2 class="comm-header">
+      <h2 class="comm-header comm-animation">
         Creating <span class="comm-header-span">Meaningful</span> Work
       </h2>
 
-      <p class="comm-desc">
+      <p class="comm-desc comm-animation">
         Starting in 2022, Our advanced courses will be focusing on developing
         applications for our school and the community
       </p>
@@ -16,18 +16,18 @@
         <img
           src="https://res.cloudinary.com/dbopxlpuy/image/upload/c_scale,f_auto,q_auto,w_900/v1649074580/CMS/Screenshot_W_2022-04-04_at_08-15-55_The_SITECH_Times_Official_Website_jmqwwx.png"
           alt="TechTimes Newspaper Front Page"
-          class="about-img"
+          class="comm-img comm-animation"
         />
-        <h3 class="about-img-owner">Tech Times</h3>
+        <h3 class="comm-img-owner comm-animation">Tech Times</h3>
         <a
           href="https://dev.sitechtimes.com/"
           target="_blank"
-          class="btn header-btn-secondary"
+          class="btn header-btn-secondary comm-animation"
         >
           Check It Out
         </a>
       </div>
-      <p class="comm-text">
+      <p class="comm-text comm-animation">
         The goal is to mirror a modern development studio and push students to
         master the material through meaningful projects that engage with the
         <span class="comm-span">community</span>. Students will be using modern
@@ -110,5 +110,14 @@ export default {}
     margin: 5rem auto 6rem auto;
     width: 100%;
   }
+}
+.comm-img {
+  margin-top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.comm-img-owner {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 </style>
