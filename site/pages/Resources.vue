@@ -15,7 +15,7 @@
 
     <div class="resource-section">
       <Resource
-        v-for="resource in SortedResources"
+        v-for="resource in filterByCat"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
@@ -34,7 +34,7 @@ export default {
   components: { Multiselect },
   data() {
     return {
-      value: null,
+      value: 'All',
       options: [
         { cat: [], drop: 'All' },
         { cat: [], drop: 'JavaScript' },
@@ -57,7 +57,7 @@ export default {
   },
   async fetch() {
     this.resources = await this.$content('resources').fetch()
-    this.SortedResources = this.resources.resources
+    /*  this.SortedResources = this.resources.resources
     this.options[0].cat = this.resources.resources
     this.options[2].cat = this.resources.resources.filter((el) =>
       el.tag.includes('CSS')
@@ -76,7 +76,18 @@ export default {
     )
     this.options[6].cat = this.resources.resources.filter((el) =>
       el.tag.includes('Library')
-    )
+    ) */
+  },
+  computed: {
+    filterByCat: function () {
+      if (this.value.drop === 'All' || this.value === 'All') {
+        return this.resources.resources
+      } else {
+        return this.resources.resources.filter((resource) =>
+          resource.tag.includes(this.value.drop)
+        )
+      }
+    },
   },
   mounted() {
     this.animateResources()
