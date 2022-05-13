@@ -47,5 +47,6 @@ export default {
 .Logo-img {
   height: 3.5rem;
   margin: 0.5rem 2rem;
+  transition: all 0.3s;
 }
 </style>
