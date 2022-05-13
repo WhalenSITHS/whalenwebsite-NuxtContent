@@ -32,29 +32,31 @@ export default {
     width: 100%;
   }
 }
+@media (hover: hover) {
+  .project-card:hover .project-card-link,
+  .project-card:visited .project-card:active,
+  .project-card:link {
+    background-color: var(--secondary);
+    /* color: black; */
+  }
+  .project-card:hover .project-img {
+    height: 30%;
+  }
+  .project-card:hover .project-card-title {
+    transform: translateY(-100%);
+    font-size: var(--h2);
+  }
+  .project-card:hover .stack-list {
+    transform: translateY(-100%);
+    font-size: var(--h1);
+  }
+  .project-card:hover .Logo-img {
+    transform: translateY(-30%);
+    height: 8rem;
+    margin: 0.5rem 1rem;
+  }
+}
 
-.project-card:hover .project-card-link,
-.project-card:visited .project-card:active,
-.project-card:link {
-  background-color: var(--secondary);
-  /* color: black; */
-}
-.project-card:hover .project-img {
-  height: 30%;
-}
-.project-card:hover .project-card-title {
-  transform: translateY(-100%);
-  font-size: var(--h2);
-}
-.project-card:hover .stack-list {
-  transform: translateY(-100%);
-  font-size: var(--h1);
-}
-.project-card:hover .Logo-img {
-  transform: translateY(-30%);
-  height: 8rem;
-  margin: 0.5rem 1rem;
-}
 .project-card-link,
 .project-card:visited .project-card:active,
 .project-card:link {
