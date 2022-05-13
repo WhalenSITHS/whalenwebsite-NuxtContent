@@ -23,6 +23,21 @@ export default {
     projectPage: String,
     project: String,
   },
+  /* mounted() {
+    this.animateResources()
+  },
+  methods: {
+    animateResources() {
+      const tlR = this.$gsap.timeline()
+
+      tlR.from('.resource-card', {
+        duration: 0.3,
+        opacity: 0,
+        stagger: 0.1,
+        // x: -350,
+      })
+    },
+  }, */
 }
 </script>
 

@@ -78,13 +78,27 @@ export default {
       el.tag.includes('Library')
     )
   },
+  mounted() {
+    this.animateResources()
+  },
   methods: {
+    animateResources() {
+      const tlR = this.$gsap.timeline({ delay: 0.1 })
+
+      tlR.from('.resource-card', {
+        duration: 0.3,
+        opacity: 0,
+        stagger: 0.1,
+        // x: -350,
+      })
+    },
     sortBy: function (value) {
       if (value == null) {
         this.SortedResources = this.options[0].cat
       } else {
         this.SortedResources = value.cat
       }
+      this.animateResources()
     },
     test: function (value) {
       if (value == null) {
@@ -144,5 +158,7 @@ export default {
   .multi {
     width: 60vw;
   }
+}
+.resource-card {
 }
 </style>
