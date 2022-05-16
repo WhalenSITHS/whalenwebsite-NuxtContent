@@ -15,7 +15,7 @@
 
     <TransitionGroup name="fade" tag="ul" class="resource-section">
       <Resource
-        v-for="resource in filterByCat"
+        v-for="resource in filterByCat1"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
@@ -34,7 +34,7 @@ export default {
   components: { Multiselect },
   data() {
     return {
-      value: 'All',
+      value: null,
       options: [
         { cat: [], drop: 'All' },
         { cat: [], drop: 'JavaScript' },
@@ -86,12 +86,20 @@ export default {
         this.value.drop === null ||
         this.value === null
       ) {
-        this.value = 'All'
         return this.resources.resources
       } else {
         return this.resources.resources.filter((resource) =>
           resource.tag.includes(this.value.drop)
         )
+      }
+    },
+    filterByCat1: function () {
+      if (this.value.drop) {
+        return this.resources.resources.filter((resource) =>
+          resource.tag.includes(this.value.drop)
+        )
+      } else {
+        return this.resources.resources
       }
     },
   },
