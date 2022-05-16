@@ -13,7 +13,7 @@
       :options="options"
     ></multiselect>
 
-    <div class="resource-section">
+    <TransitionGroup name="fade" tag="ul" class="resource-section">
       <Resource
         v-for="resource in filterByCat"
         :key="resource.name"
@@ -24,7 +24,7 @@
         :tag="resource.tag"
         :text="resource.description"
       ></Resource>
-    </div>
+    </TransitionGroup>
   </section>
 </template>
 
@@ -80,7 +80,13 @@ export default {
   },
   computed: {
     filterByCat: function () {
-      if (this.value.drop === 'All' || this.value === 'All') {
+      if (
+        this.value.drop === 'All' ||
+        this.value === 'All' ||
+        this.value.drop === null ||
+        this.value === null
+      ) {
+        this.value = 'All'
         return this.resources.resources
       } else {
         return this.resources.resources.filter((resource) =>
@@ -89,27 +95,12 @@ export default {
       }
     },
   },
-  mounted() {
-    this.animateResources()
-  },
+  mounted() {},
   methods: {
-    animateResources() {
-      const tlR = this.$gsap.timeline({ delay: 0.1 })
-
-      tlR.from('.resource-card', {
-        duration: 0.3,
-        opacity: 0,
-        stagger: 0.1,
-        // x: -350,
-      })
-    },
     sortBy: function (value) {
       if (value == null) {
-        this.SortedResources = this.options[0].cat
-      } else {
-        this.SortedResources = value.cat
+        this.value === 'All'
       }
-      this.animateResources()
     },
     test: function (value) {
       if (value == null) {
@@ -171,5 +162,14 @@ export default {
   }
 }
 .resource-card {
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

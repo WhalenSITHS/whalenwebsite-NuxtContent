@@ -178,7 +178,7 @@
             "thumbnail": "designcourse",
             "alt":"designcourse channel youtube",
             "description":"This YouTube channel as all the amazing design and animation tutorials you could want from a YouTube channel. ",
-            "tag":["Creator"]
+            "tag":["Creator", "Content Creators"]
         },
         {
             "name":"DevEd",
@@ -186,7 +186,7 @@
             "thumbnail": "deved",
             "alt":"Dev Ed Youtube Channel Screenshot",
             "description":"Lots of react and vanilla design tutorials",
-            "tag":["Creator"]
+            "tag":["Creator", "Content Creators"]
         },
         {
             "name":"Traversy Media",
@@ -194,7 +194,7 @@
             "thumbnail": "traversy",
             "alt":"Traversy Media channel",
             "description":"Tutorials on all matter of web dev",
-            "tag":["Creator"]
+            "tag":["Creator", "Content Creators"]
         },
         {
             "name":"Level Up Tuts",
@@ -202,7 +202,7 @@
             "thumbnail": "levelup",
             "alt":"Level Up Tuts channel screeshot",
             "description":"Great SvelteJS content",
-            "tag":["Creator"]
+            "tag":["Creator", "Content Creators"]
         },
         {
             "name":"Net Ninja",
@@ -210,7 +210,7 @@
             "thumbnail": "ninja",
             "alt":"Net Ninja channel screeshot",
             "description":"Great content for all frameworks and backend" ,
-            "tag":["Creator"]
+            "tag":["Creator", "Content Creators"]
         },
         {
             "name":"Pika Screenshots",
