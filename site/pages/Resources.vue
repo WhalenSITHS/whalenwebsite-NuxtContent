@@ -9,13 +9,14 @@
       label="drop"
       @input="sortBy(value)"
       class="multi"
+      :allow-empty="false"
       v-model="value"
       :options="options"
     ></multiselect>
 
     <TransitionGroup name="fade" tag="ul" class="resource-section">
       <Resource
-        v-for="resource in filterByCat1"
+        v-for="resource in filterByCat"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
@@ -34,7 +35,7 @@ export default {
   components: { Multiselect },
   data() {
     return {
-      value: null,
+      value: 'All',
       options: [
         { cat: [], drop: 'All' },
         { cat: [], drop: 'JavaScript' },
