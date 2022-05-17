@@ -14,7 +14,18 @@
       :options="options"
     ></multiselect>
 
-    <TransitionGroup name="fade" tag="ul" class="resource-section">
+    <TransitionGroup
+      tag="ul"
+      name="items"
+      class="resource-section"
+      :css="false"
+      @before-enter="beforeEnter"
+      @before-leave="beforeLeave"
+      @after-enter="afterEnter"
+      @after-leave="afterLeave"
+      @enter="enter"
+      @leave="leave"
+    >
       <Resource
         v-for="resource in filterByCat"
         :key="resource.name"
@@ -24,6 +35,7 @@
         :alt="resource.alt"
         :tag="resource.tag"
         :text="resource.description"
+        :data-index="index"
       ></Resource>
     </TransitionGroup>
   </section>
@@ -94,15 +106,6 @@ export default {
         )
       }
     },
-    filterByCat1: function () {
-      if (this.value.drop) {
-        return this.resources.resources.filter((resource) =>
-          resource.tag.includes(this.value.drop)
-        )
-      } else {
-        return this.resources.resources
-      }
-    },
   },
   mounted() {},
   methods: {
@@ -117,6 +120,26 @@ export default {
       } else {
         console.log(value.cat)
       }
+    },
+    onBeforeEnter(el) {
+      el.style.opacity = 0
+      el.style.height = 0
+    },
+    onEnter(el, done) {
+      this.$gsap.to(el, {
+        opacity: 1,
+        height: '39rem',
+        delay: el.dataset.index * 0.15,
+        onComplete: done,
+      })
+    },
+    onLeave(el, done) {
+      this.$gsap.to(el, {
+        opacity: 0,
+        height: 0,
+        delay: el.dataset.index * 0.15,
+        onComplete: done,
+      })
     },
   },
 }
@@ -172,13 +195,11 @@ export default {
 }
 .resource-card {
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
+.items-leave-active {
+  position: absolute;
 }
 
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+.items-move {
+  transition: transform 600ms ease-in;
 }
 </style>
