@@ -195,8 +195,10 @@ export default {
 }
 .resource-card {
 }
-.items-leave-active {
+.items-leave-active,
+.items-enter-active {
   position: absolute;
+  opacity: 0;
 }
 
 .items-move {
