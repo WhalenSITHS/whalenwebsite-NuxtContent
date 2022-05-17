@@ -14,18 +14,7 @@
       :options="options"
     ></multiselect>
 
-    <TransitionGroup
-      tag="ul"
-      name="items"
-      class="resource-section"
-      :css="false"
-      @before-enter="beforeEnter"
-      @before-leave="beforeLeave"
-      @after-enter="afterEnter"
-      @after-leave="afterLeave"
-      @enter="enter"
-      @leave="leave"
-    >
+    <div class="resource-section">
       <Resource
         v-for="resource in filterByCat"
         :key="resource.name"
@@ -37,7 +26,7 @@
         :text="resource.description"
         :data-index="index"
       ></Resource>
-    </TransitionGroup>
+    </div>
   </section>
 </template>
 
@@ -121,26 +110,6 @@ export default {
         console.log(value.cat)
       }
     },
-    onBeforeEnter(el) {
-      el.style.opacity = 0
-      el.style.height = 0
-    },
-    onEnter(el, done) {
-      this.$gsap.to(el, {
-        opacity: 1,
-        height: '39rem',
-        delay: el.dataset.index * 0.15,
-        onComplete: done,
-      })
-    },
-    onLeave(el, done) {
-      this.$gsap.to(el, {
-        opacity: 0,
-        height: 0,
-        delay: el.dataset.index * 0.15,
-        onComplete: done,
-      })
-    },
   },
 }
 </script>
@@ -194,12 +163,5 @@ export default {
   }
 }
 .resource-card {
-}
-.items-leave-active {
-  position: absolute;
-}
-
-.items-move {
-  transition: transform 600ms ease-in;
 }
 </style>
