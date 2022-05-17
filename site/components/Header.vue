@@ -2,12 +2,18 @@
   <header>
     <div class="header-wrapper">
       <div class="text-container">
-        <h1 class="header-primary">Full Stack Educator</h1>
-        <h2 class="header-secondary">Staten Island Technical HS</h2>
-        <nuxt-link to="/Resources" class="btn header-btn-primary"
+        <h1 class="header-primary header-animation">Full Stack Educator</h1>
+        <h2 class="header-secondary header-animation">
+          Staten Island Technical HS
+        </h2>
+        <nuxt-link
+          to="/Resources"
+          class="btn header-btn-primary header-animation"
           >Resources</nuxt-link
         >
-        <nuxt-link to="/Projects" class="btn header-btn-secondary"
+        <nuxt-link
+          to="/Projects"
+          class="btn header-btn-secondary header-animation"
           >See Our Work</nuxt-link
         >
       </div>

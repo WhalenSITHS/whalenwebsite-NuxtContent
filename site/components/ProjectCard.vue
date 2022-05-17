@@ -23,6 +23,21 @@ export default {
     projectPage: String,
     project: String,
   },
+  /* mounted() {
+    this.animateResources()
+  },
+  methods: {
+    animateResources() {
+      const tlR = this.$gsap.timeline()
+
+      tlR.from('.resource-card', {
+        duration: 0.3,
+        opacity: 0,
+        stagger: 0.1,
+        // x: -350,
+      })
+    },
+  }, */
 }
 </script>
 
@@ -32,13 +47,31 @@ export default {
     width: 100%;
   }
 }
-
-.project-card:hover .project-card-link,
-.project-card:visited .project-card:active,
-.project-card:link {
-  background-color: white;
-  color: black;
+@media (hover: hover) {
+  .project-card:hover .project-card-link,
+  .project-card:visited .project-card:active,
+  .project-card:link {
+    background-color: var(--secondary);
+    /* color: black; */
+  }
+  .project-card:hover .project-img {
+    height: 30%;
+  }
+  .project-card:hover .project-card-title {
+    transform: translateY(-100%);
+    font-size: var(--h2);
+  }
+  .project-card:hover .stack-list {
+    transform: translateY(-100%);
+    font-size: var(--h1);
+  }
+  .project-card:hover .Logo-img {
+    transform: translateY(-30%);
+    height: 8rem;
+    margin: 0.5rem 1rem;
+  }
 }
+
 .project-card-link,
 .project-card:visited .project-card:active,
 .project-card:link {
@@ -65,12 +98,13 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s;
 }
 .project-card-title {
   margin: 1rem auto;
   padding: 2rem 4rem;
   font-size: var(--h3);
-
+  transition: all 0.3s;
   width: 100%;
 }
 .stack-list {
@@ -79,6 +113,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 .project-link {
   font-size: var(--h4);

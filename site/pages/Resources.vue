@@ -9,13 +9,14 @@
       label="drop"
       @input="sortBy(value)"
       class="multi"
+      :allow-empty="false"
       v-model="value"
       :options="options"
     ></multiselect>
 
     <div class="resource-section">
       <Resource
-        v-for="resource in SortedResources"
+        v-for="resource in filterByCat"
         :key="resource.name"
         :title="resource.name"
         :image="resource.thumbnail"
@@ -23,6 +24,7 @@
         :alt="resource.alt"
         :tag="resource.tag"
         :text="resource.description"
+        :data-index="index"
       ></Resource>
     </div>
   </section>
@@ -34,7 +36,7 @@ export default {
   components: { Multiselect },
   data() {
     return {
-      value: null,
+      value: 'All',
       options: [
         { cat: [], drop: 'All' },
         { cat: [], drop: 'JavaScript' },
@@ -57,7 +59,7 @@ export default {
   },
   async fetch() {
     this.resources = await this.$content('resources').fetch()
-    this.SortedResources = this.resources.resources
+    /*  this.SortedResources = this.resources.resources
     this.options[0].cat = this.resources.resources
     this.options[2].cat = this.resources.resources.filter((el) =>
       el.tag.includes('CSS')
@@ -76,14 +78,29 @@ export default {
     )
     this.options[6].cat = this.resources.resources.filter((el) =>
       el.tag.includes('Library')
-    )
+    ) */
   },
+  computed: {
+    filterByCat: function () {
+      if (
+        this.value.drop === 'All' ||
+        this.value === 'All' ||
+        this.value.drop === null ||
+        this.value === null
+      ) {
+        return this.resources.resources
+      } else {
+        return this.resources.resources.filter((resource) =>
+          resource.tag.includes(this.value.drop)
+        )
+      }
+    },
+  },
+  mounted() {},
   methods: {
     sortBy: function (value) {
       if (value == null) {
-        this.SortedResources = this.options[0].cat
-      } else {
-        this.SortedResources = value.cat
+        this.value === 'All'
       }
     },
     test: function (value) {
@@ -144,5 +161,7 @@ export default {
   .multi {
     width: 60vw;
   }
+}
+.resource-card {
 }
 </style>

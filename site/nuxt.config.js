@@ -38,12 +38,29 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
-  buildModules: ['@nuxtjs/fontawesome', '@nuxtjs/color-mode'],
+  buildModules: [
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/color-mode',
+    'nuxt-gsap-module',
+  ],
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faLaptopCode', 'faPalette', 'faMoon', 'faSun'],
-      brands: ['faYoutube', 'faJs', 'faCss3Alt'],
+      solid: [
+        'faLaptopCode',
+        'faPalette',
+        'faMoon',
+        'faSun',
+        'faEnvelopeSquare',
+      ],
+      brands: [
+        'faYoutube',
+        'faJs',
+        'faCss3Alt',
+        'faGithubSquare',
+        'faTwitterSquare',
+        'faFacebookSquare',
+      ],
     },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,7 +68,12 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
-
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true,
+    },
+  },
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     nestedProperties: ['resources.tag'],
