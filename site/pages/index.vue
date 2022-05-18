@@ -102,7 +102,7 @@ export default {
 
       const tlComm = this.$gsap.timeline({
         scrollTrigger: '.comm',
-        delay: 0.1,
+        delay: 0.3,
       })
       tlComm.from('.comm-animation', {
         duration: 0.8,
