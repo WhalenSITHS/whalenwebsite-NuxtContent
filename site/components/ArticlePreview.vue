@@ -37,6 +37,7 @@ export default {
         Education: '#BBF7D0',
         Development: '#F5D0FE',
         Library: '#FEF08A',
+        Vue: '#F5D0FE',
       },
     }
   },
