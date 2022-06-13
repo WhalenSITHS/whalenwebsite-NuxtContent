@@ -38,6 +38,7 @@ export default {
         Development: '#F5D0FE',
         Library: '#FEF08A',
         Vue: '#F5D0FE',
+        Node: '#BBF7D0',
       },
     }
   },
