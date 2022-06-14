@@ -89,7 +89,7 @@ export default {
 .article-card-date {
   width: 40%;
   font-size: var(--h5);
-  color: var(--secondary);
+  color: #c87832;
   text-align: right;
 }
 .article-card-title-wrapper,
@@ -100,9 +100,8 @@ export default {
   color: white;
 }
 .article-card-title {
-  font-size: var(--h4);
+  font-size: var(--h3);
   margin-bottom: 2rem;
-
   text-align: left;
 }
 .article-card-author {
@@ -110,7 +109,8 @@ export default {
   margin-bottom: 2rem;
   text-align: center;
   background-color: var(--secondary);
-  width: 40%;
+  color: black;
+  width: 70%;
   padding: 1rem;
 }
 @media screen and (max-width: 900px) {

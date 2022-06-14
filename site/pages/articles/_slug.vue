@@ -32,8 +32,6 @@ export default {
 }
 .article-title {
   margin: 5rem auto;
-
-  font-weight: 700;
 }
 
 @media screen and (max-width: 900px) {
@@ -50,8 +48,7 @@ export default {
 .nuxt-content * {
   margin: 3rem auto;
 }
-.nuxt-content h1,
-h2 {
+.nuxt-content h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
