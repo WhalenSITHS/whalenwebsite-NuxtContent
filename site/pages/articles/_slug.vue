@@ -57,4 +57,9 @@ export default {
   width: 80%;
   margin: 1rem auto;
 }
+@media screen and (max-width: 900px) {
+  .nuxt-content img {
+    width: 100%;
+  }
+}
 </style>
