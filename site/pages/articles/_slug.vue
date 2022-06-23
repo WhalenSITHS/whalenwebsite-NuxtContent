@@ -52,4 +52,9 @@ export default {
   font-weight: bold;
   text-transform: uppercase;
 }
+.nuxt-content img {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+}
 </style>
