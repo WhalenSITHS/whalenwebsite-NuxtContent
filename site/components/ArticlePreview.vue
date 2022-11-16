@@ -39,6 +39,7 @@ export default {
         Library: '#FEF08A',
         Vue: '#F5D0FE',
         Node: '#BBF7D0',
+        Python: '#bfdbfe',
       },
     }
   },
