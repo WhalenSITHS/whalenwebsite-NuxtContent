@@ -17,7 +17,7 @@ export default {
   },
   async fetch() {
     this.articles = await this.$content('articles')
-      .sortBy('slug', 'desc')
+      .sortBy('date', 'desc')
       .fetch()
   },
 }

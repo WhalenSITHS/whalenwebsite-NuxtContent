@@ -8,7 +8,7 @@
     </Nuxt-link>
     <div class="article-tag-wrapper">
       <h4 class="article-tag" :style="getColor">{{ article.tags[0] }}</h4>
-      <h5 class="article-card-date">{{ article.date }}</h5>
+      <h5 class="article-card-date">{{ article.slug }}</h5>
     </div>
     <Nuxt-link
       class="article-card-title-wrapper"
