@@ -40,6 +40,7 @@ export default {
         Vue: '#F5D0FE',
         Node: '#BBF7D0',
         Python: '#bfdbfe',
+        ComputerScience: '#eeeee4',
       },
     }
   },
