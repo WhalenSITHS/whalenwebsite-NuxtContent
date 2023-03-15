@@ -235,6 +235,14 @@
             "alt":"Huemint Homepage",
             "description":"Huemint uses machine learning to create unique color schemes for your brand, website or graphic",
             "tag":["Design"]
+        },
+        {
+            "name":"Font-Joy",
+            "link": "https://fontjoy.com/",
+            "thumbnail": "fontjoy",
+            "alt":"FontJoy Homepage",
+            "description":"Font Joy uses machine learning to pair fonts for your site",
+            "tag":["Design"]
         }
     ]
 }
