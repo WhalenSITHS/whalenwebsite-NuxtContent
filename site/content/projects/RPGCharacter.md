@@ -1,6 +1,6 @@
 ---
 title: RPG Character Designer
-developers: [{name: "Alston Chan", school: "SITHS 2022"}]
+developers: [{name: "Alston Chan", school: "Maryland 2026"}]
 image: "https://res.cloudinary.com/dbopxlpuy/image/upload/c_scale,f_auto,w_800/v1613933809/RPG Character/rpg_screen_agdbvj"
 altText: "8Bit Character"
 techStack: ["Vue"]
